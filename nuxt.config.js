@@ -12,28 +12,23 @@ export default {
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
-        hid: "description",
-        name: "description",
-        content: process.env.npm_package_description || ""
-      },
-      {
         hid: "twitter:site",
-        name: "description",
+        property: "description",
         content: "@aifedesglitch"
       },
       {
         hid: "twitter:creator",
-        name: "twitter:creator",
+        property: "twitter:creator",
         content: "@aifedesglitch"
       },
       {
         hid: "twitter:card",
-        name: "twitter:card",
+        property: "twitter:card",
         content: "summary"
       },
       {
         hid: "og:site_name",
-        name: "og:site_name",
+        property: "og:site_name",
         content: "aife twitch"
       }
     ],
@@ -71,7 +66,7 @@ export default {
           fallbackLocale: "fr",
           messages: {
             fr: {
-              greeting: "Hello world!"
+              // greeting: "Hello world!"
             }
           }
         }

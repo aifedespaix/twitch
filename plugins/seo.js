@@ -13,48 +13,48 @@ Vue.prototype.$seo = {
         },
         {
           hid: "og:title",
-          name: "og:title",
+          property: "og:title",
           value: title
         },
         {
           hid: "og:description",
-          name: "og:description",
+          property: "og:description",
           value: description
         },
         {
           hid: "og:type",
-          name: "og:type",
+          property: "og:type",
           value: "website"
           // value: "website"
         },
         {
           hid: "og:locale",
-          name: "og:locale",
+          property: "og:locale",
           value: "fr_FR"
         },
         {
           hid: "og:url",
-          name: "og:url",
+          property: "og:url",
           value: `${config.baseUrl}/${path}`
         },
         {
           hid: "og:image",
-          name: "og:image",
+          property: "og:image",
           value: `${config.baseUrl}/thumbnails/${path}.jpg`
         },
         {
           hid: "twitter:title",
-          name: "twitter:title",
+          property: "twitter:title",
           value: title
         },
         {
           hid: "twitter:description",
-          name: "twitter:description",
+          property: "twitter:description",
           value: description
         },
         {
           hid: "twitter:image",
-          name: "twitter:image",
+          property: "twitter:image",
           value: `${config.baseUrl}/thumbnails/${path}.jpg`
         }
       ]
