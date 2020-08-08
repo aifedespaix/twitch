@@ -1,7 +1,7 @@
 {
   "name": "aife-twitch",
   "version": "1.0.0",
-  "description": "aife's twitch app",
+  "description": "Voici l'app twitch de Aife",
   "author": "aife",
   "private": true,
   "scripts": {
@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.6.0",
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "@nuxtjs/sitemap": "^2.4.0",
     "nuxt": "^2.14.1",
     "nuxt-i18n": "^6.13.7"
   },

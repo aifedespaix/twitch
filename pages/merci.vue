@@ -30,15 +30,11 @@
 import Logo from "~/components/Logo.vue";
 
 export default {
-  head: {
-    title: "Merci à vous tous",
-    meta: [
-      {
-        hid: "description",
-        name:
-          "Je remercie l'ensemble de mes viewers contribuant financièrement à l'évolution de la châine !",
-      },
-    ],
+  head() {
+    return this.$seo.head(
+      "Merci à vous tous",
+      "Je remercie l'ensemble de mes viewers contribuant financièrement à l'évolution de la chaîne !"
+    );
   },
   async asyncData({ $content }) {
     const donationsList = await $content("donations").fetch();

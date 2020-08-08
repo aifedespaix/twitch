@@ -85,7 +85,72 @@ export default {
           command: "!onz",
           description: "Obtenir le lien du compte Soundcloud de Onz",
         },
-      ],
+        {
+          command: "!pktutappellesaife",
+          description: "Pourquoi tu t'appelles aife ?",
+        },
+        {
+          command: "!ckoitonprenom",
+          description: "C'est quoi ton prénom ?",
+        },
+        {
+          command: "!ckoitonprenom",
+          description: "C'est quoi ton prénom ?",
+        },
+        {
+          command: "!botwconsole",
+          description: "Tu joues sur quelle console ?",
+        },
+        {
+          command: "!botwpktujouesuremulateur",
+          description: "Pourquoi tu joues sur émulateur ?",
+        },
+        {
+          command: "!botwquelemulateur",
+          description: "Tu utilises quel émulateur ",
+        },
+        {
+          command: "!tutocemu",
+          description: "Comment configurer CEMU ?",
+        },
+        {
+          command: "!botwclavier",
+          description: "Tu joues sur clavier ?",
+        },
+        {
+          command: "!botwckoitamanette",
+          description: "Tu utilises quoi comme manette ?",
+        },
+        {
+          command: "!botwpkta3coeurs",
+          description: "Pourquoi t'as que 3 cœurs ?",
+        },
+        {
+          command: "!botwpktactivepaslespouvoir",
+          description: "Pourquoi tu active pas les pouvoirs ?",
+        },
+        {
+          command: "!botwpktufaispasunshieldclip",
+          description:
+            "Pourquoi tu ne fait pas un shield clip durant les épreuves de l'épée ?",
+        },
+        {
+          command: "!botwpktacettetenue",
+          description: "Pourquoi tu as cette tenue ?",
+        },
+        {
+          command: "!botwcommentonatatenue",
+          description: "Comment on récupère ta tenue ?",
+        },
+        {
+          command: "!botwtacombiendheuredejeu",
+          description: "Tu as combien d'heure de jeu ?",
+        },
+        {
+          command: "!config",
+          description: "Quelle est ma config ?",
+        },
+      ].sort((a, b) => (a.command > b.command ? 1 : -1)),
     };
   },
   components: {
