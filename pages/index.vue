@@ -1,28 +1,36 @@
 <template>
   <div>
     <h1>Bienvenue</h1>
-    <v-card class="mx-auto" max-width="400">
-      <v-card-title class="pb-0">Commandes</v-card-title>
 
-      <v-card-text class="text--primary">Liste des commandes du chat Twitch</v-card-text>
+    <v-row dense>
+      <!-- <v-col>
+        <v-card class="mx-auto" max-width="400">
+          <v-card-title class="pb-0">Commandes</v-card-title>
 
-      <v-card-actions>
-        <nuxt-link to="/commandes">
-          <v-btn color="orange" text>Voir</v-btn>
-        </nuxt-link>
-      </v-card-actions>
-    </v-card>
-    <v-card class="mx-auto" max-width="400">
-      <v-card-title class="pb-0">Merci</v-card-title>
+          <v-card-text class="text--primary">Liste des commandes du chat Twitch</v-card-text>
 
-      <v-card-text class="text--primary">Tous les remerciements</v-card-text>
+          <v-card-actions>
+            <nuxt-link to="/commandes">
+              <v-btn text>Voir</v-btn>
+            </nuxt-link>
+          </v-card-actions>
+        </v-card>
+      </v-col>
 
-      <v-card-actions>
-        <nuxt-link to="/merci">
-          <v-btn color="orange" text>Voir</v-btn>
-        </nuxt-link>
-      </v-card-actions>
-    </v-card>
+      <v-col>
+        <v-card class="mx-auto" max-width="400">
+          <v-card-title class="pb-0">Merci</v-card-title>
+
+          <v-card-text class="text--primary">Tous les remerciements</v-card-text>
+
+          <v-card-actions>
+            <nuxt-link to="/remerciements">
+              <v-btn text>Voir</v-btn>
+            </nuxt-link>
+          </v-card-actions>
+        </v-card>
+      </v-col>-->
+    </v-row>
   </div>
 </template>
 
