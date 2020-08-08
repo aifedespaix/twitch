@@ -33,7 +33,8 @@ export default {
   head() {
     return this.$seo.head(
       "Merci à vous tous",
-      "Je remercie l'ensemble de mes viewers contribuant financièrement à l'évolution de la chaîne !"
+      "Je remercie l'ensemble de mes viewers contribuant financièrement à l'évolution de la chaîne !",
+      "merci"
     );
   },
   async asyncData({ $content }) {

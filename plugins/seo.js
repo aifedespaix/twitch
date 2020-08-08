@@ -1,5 +1,6 @@
 import Vue from "vue";
-console.log("WWWWWWWWWWWWWWWWWWWWWW");
+import { config } from "../absolute.config";
+
 Vue.prototype.$seo = {
   head: (title, description, path) => {
     return {
@@ -34,12 +35,12 @@ Vue.prototype.$seo = {
         {
           hid: "og:url",
           name: "og:url",
-          value: `https://twitch.aife.io/${path}`
+          value: `${config.baseUrl}/${path}`
         },
         {
           hid: "og:image",
           name: "og:image",
-          value: `https://twitch.aife.io/static/thumbnails/${path}.jpg`
+          value: `${config.baseUrl}/thumbnails/${path}.jpg`
         },
         {
           hid: "twitter:title",
@@ -54,7 +55,7 @@ Vue.prototype.$seo = {
         {
           hid: "twitter:image",
           name: "twitter:image",
-          value: `${process.env.BASE_URL}/static/thumbnails/${path}.jpg`
+          value: `${config.baseUrl}/thumbnails/${path}.jpg`
         }
       ]
     };

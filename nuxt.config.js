@@ -1,4 +1,5 @@
 import fr from "vuetify/es5/locale/fr";
+import { config } from "./absolute.config";
 
 export default {
   mode: "spa",
@@ -43,7 +44,7 @@ export default {
    */
   loading: { color: "#fff" },
   sitemap: {
-    hostname: process.env.BASE_URL,
+    hostname: config.baseUrl,
     gzip: true
   },
   /*
