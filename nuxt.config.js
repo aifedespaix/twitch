@@ -1,25 +1,34 @@
+import fr from "vuetify/es5/locale/fr";
+
 export default {
-  mode: 'spa',
+  head: {
+    titleTemplate: "%s - aife Twitch",
+    meta: [
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial scale=1" }
+    ]
+  },
+  mode: "spa",
   /*
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: process.env.npm_package_name || "",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || '',
-      },
+        hid: "description",
+        name: "description",
+        content: process.env.npm_package_description || ""
+      }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: "#fff" },
   /*
    ** Global CSS
    */
@@ -31,7 +40,24 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+    "@nuxt/content",
+    [
+      "nuxt-i18n",
+      {
+        locales: ["fr"],
+        defaultLocale: "fr",
+        vueI18n: {
+          fallbackLocale: "fr",
+          messages: {
+            fr: {
+              greeting: "Hello world!"
+            }
+          }
+        }
+      }
+    ]
+  ],
   /*
    ** Build configuration
    */
@@ -39,6 +65,22 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {},
+    extend(config, ctx) {}
   },
+  buildModules: ["@nuxtjs/vuetify"],
+  vuetify: {
+    lang: {
+      locales: { fr },
+      current: "fr"
+    },
+    theme: {
+      options: {
+        themeCache: {
+          get: key => localStorage.getItem(key),
+          set: (key, value) => localStorage.setItem(key, value)
+        }
+      }
+    }
+    /* module options */
+  }
 };

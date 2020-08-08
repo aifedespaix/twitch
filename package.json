@@ -1,8 +1,8 @@
 {
-  "name": "nuxtjs",
+  "name": "aife-twitch",
   "version": "1.0.0",
-  "description": "My astonishing Nuxt.js project",
-  "author": "msweeneydev",
+  "description": "aife's twitch app",
+  "author": "aife",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -10,9 +10,12 @@
     "start": "nuxt start"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "@nuxt/content": "^1.6.0",
+    "nuxt": "^2.14.1",
+    "nuxt-i18n": "^6.13.7"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "@nuxtjs/vuetify": "^1.11.2",
+    "nodemon": "^2.0.4"
   }
 }
