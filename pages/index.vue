@@ -15,7 +15,7 @@
     <v-card class="mx-auto" max-width="400">
       <v-card-title class="pb-0">Merci</v-card-title>
 
-      <v-card-text class="text--primary">Tous les remerciements !</v-card-text>
+      <v-card-text class="text--primary">Tous les remerciements</v-card-text>
 
       <v-card-actions>
         <nuxt-link to="/merci">

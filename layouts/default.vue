@@ -43,7 +43,7 @@ export default {
     left: false,
     items: [
       { title: "Accueil", icon: "mdi-home", url: "/" },
-      { title: "Merci", icon: "mdi-heart", url: "/merci" },
+      { title: "Merci", icon: "mdi-heart", url: "/remerciements" },
       { title: "Commandes", icon: "mdi-help-box", url: "/commandes" },
     ],
   }),

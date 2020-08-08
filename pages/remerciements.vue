@@ -1,7 +1,7 @@
 <template>
   <v-card class="mx-auto">
     <v-card-title class="pb-0">
-      Merci !
+      Remerciements !
       <v-spacer></v-spacer>
       <v-text-field
         v-model="search"
@@ -12,7 +12,7 @@
       ></v-text-field>
     </v-card-title>
 
-    <v-card-text class="text--primary">Merci à vous tous</v-card-text>
+    <v-card-text class="text--primary">Merci gros merci à vous tous</v-card-text>
 
     <v-card-text>
       <v-data-table
@@ -30,9 +30,9 @@
 export default {
   head() {
     return this.$seo(
-      "Merci à vous tous",
+      "Merci à tous pour vos contributions",
       "Je remercie l'ensemble de mes viewers contribuant financièrement à l'évolution de la chaîne !",
-      "merci"
+      "remerciements"
     );
   },
   async asyncData({ $content }) {
