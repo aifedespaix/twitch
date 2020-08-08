@@ -27,8 +27,10 @@
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
-
-export default {};
+export default {
+  head() {
+    return this.$seo("Accueil", "Page d'accueil de l'app Aife", "index");
+  },
+};
 </script>
  

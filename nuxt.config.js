@@ -1,11 +1,9 @@
 import fr from "vuetify/es5/locale/fr";
-import { config } from "./absolute.config";
+import { config } from "./config/aife.config";
 
 export default {
-  mode: "spa",
-  /*
-   ** Headers of the page
-   */
+  mode: "universal",
+
   head: {
     titleTemplate: "%s - aife Twitch",
     meta: [
@@ -37,7 +35,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: "#fff" },
+  loading: { color: "#333" },
   sitemap: {
     hostname: config.baseUrl,
     gzip: true
@@ -56,7 +54,6 @@ export default {
   modules: [
     "@nuxtjs/sitemap",
     "@nuxt/content",
-    "@nuxtjs/pwa",
     [
       "nuxt-i18n",
       {
@@ -87,23 +84,7 @@ export default {
     lang: {
       locales: { fr },
       current: "fr"
-    },
-    theme: {
-      options: {
-        themeCache: {
-          get: key => localStorage.getItem(key),
-          set: (key, value) => localStorage.setItem(key, value)
-        }
-      }
     }
     /* module options */
-  },
-  pwa: {
-    meta: {
-      lang: "fr",
-      twitterSite: "@aifedesglitch",
-      twitterCreator: "@aifedesglitch",
-      twitterCard: "summary"
-    }
   }
 };

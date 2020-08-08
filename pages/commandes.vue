@@ -24,6 +24,13 @@
 import Logo from "~/components/Logo.vue";
 
 export default {
+  head() {
+    return this.$seo(
+      "Liste des commandes Twitch",
+      "Liste des commandes utilisables sur le chat Twitch",
+      "commandes"
+    );
+  },
   data() {
     return {
       search: "",
@@ -149,6 +156,10 @@ export default {
         {
           command: "!config",
           description: "Quelle est ma config ?",
+        },
+        {
+          command: "!commands",
+          description: "Liste des commandes",
         },
       ].sort((a, b) => (a.command > b.command ? 1 : -1)),
     };
