@@ -1,5 +1,5 @@
-import fr from "vuetify/es5/locale/fr";
-import { config } from "./config/aife.config";
+import fr from "vuetify/es5/locale/fr"
+import { config } from "./config/aife.config"
 
 export default {
   mode: "universal",
@@ -12,25 +12,25 @@ export default {
       {
         hid: "twitter:site",
         property: "description",
-        content: "@aifedesglitch"
+        content: "@aifedesglitch",
       },
       {
         hid: "twitter:creator",
         property: "twitter:creator",
-        content: "@aifedesglitch"
+        content: "@aifedesglitch",
       },
       {
         hid: "twitter:card",
         property: "twitter:card",
-        content: "summary"
+        content: "summary",
       },
       {
         hid: "og:site_name",
         property: "og:site_name",
-        content: "aife twitch"
-      }
+        content: "aife twitch",
+      },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
   /*
    ** Customize the progress-bar color
@@ -38,7 +38,7 @@ export default {
   loading: { color: "#333" },
   sitemap: {
     hostname: config.baseUrl,
-    gzip: true
+    gzip: true,
   },
   /*
    ** Global CSS
@@ -52,7 +52,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    "@nuxtjs/sitemap",
+    // "@nuxtjs/sitemap",
     "@nuxt/content",
     [
       "nuxt-i18n",
@@ -64,27 +64,36 @@ export default {
           messages: {
             fr: {
               // greeting: "Hello world!"
-            }
-          }
-        }
-      }
-    ]
+            },
+          },
+        },
+      },
+    ],
   ],
   /*
    ** Build configuration
    */
-  build: {
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {}
+  // build: {
+  /*
+   ** You can extend webpack config here
+   */
+  extend(config, ctx) {
+    // Exécuter ESLint lors de la sauvegarde
+    if (ctx.isDev && ctx.isClient) {
+      config.module.rules.push({
+        enforce: "pre",
+        test: /\.(js|vue)$/,
+        loader: "eslint-loader",
+        exclude: /(node_modules)/,
+      })
+    }
   },
   buildModules: ["@nuxtjs/vuetify"],
   vuetify: {
     lang: {
       locales: { fr },
-      current: "fr"
-    }
+      current: "fr",
+    },
     /* module options */
-  }
-};
+  },
+}

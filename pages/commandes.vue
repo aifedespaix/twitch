@@ -2,35 +2,33 @@
   <v-card class="mx-auto">
     <v-card-title class="pb-0">
       Commandes
-      <v-spacer></v-spacer>
+      <v-spacer />
       <v-text-field
         v-model="search"
         append-icon="mdi-magnify"
         label="Rechercher"
         single-line
         hide-details
-      ></v-text-field>
+      />
     </v-card-title>
 
-    <v-card-text class="text--primary">Liste des commandes du chat Twitch</v-card-text>
+    <v-card-text class="text--primary">
+      Liste des commandes du chat Twitch
+    </v-card-text>
 
     <v-card-text>
-      <v-data-table :headers="headers" :items="commands" class="elevation-1" :search="search"></v-data-table>
+      <v-data-table
+        :headers="headers"
+        :items="commands"
+        class="elevation-1"
+        :search="search"
+      />
     </v-card-text>
   </v-card>
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
-
 export default {
-  head() {
-    return this.$seo(
-      "Liste des commandes Twitch",
-      "Liste des commandes utilisables sur le chat Twitch",
-      "commandes"
-    );
-  },
   data() {
     return {
       search: "",
@@ -162,11 +160,14 @@ export default {
           description: "Liste des commandes",
         },
       ].sort((a, b) => (a.command > b.command ? 1 : -1)),
-    };
+    }
   },
-  components: {
-    Logo,
+  head() {
+    return this.$seo(
+      "Liste des commandes Twitch",
+      "Liste des commandes utilisables sur le chat Twitch",
+      "commandes"
+    )
   },
-};
+}
 </script>
- 

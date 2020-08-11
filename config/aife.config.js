@@ -1,3 +1,3 @@
 export const config = {
-  baseUrl: "https://twitch.aife.io"
-};
+  baseUrl: "https://twitch.aife.io",
+}
