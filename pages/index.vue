@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Page d'accueiljkljkl</h1>
+    <h1>Page d'accueil</h1>
     <v-row dense>
       <!-- <v-col>
         <v-card class="mx-auto" max-width="400">

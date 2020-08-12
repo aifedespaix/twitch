@@ -39,7 +39,7 @@
     </v-navigation-drawer>
 
     <v-main>
-      <v-container data-app>
+      <v-container data-app fluid>
         <nuxt />
       </v-container>
     </v-main>
