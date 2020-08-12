@@ -24,12 +24,12 @@
       </div>
     </div>
 
-    <div class="flex-center">20h</div>
-    <div class="flex-center">21h</div>
-    <div class="flex-center">22h</div>
-    <div class="flex-center">23h</div>
-    <div class="flex-center">00h</div>
-    <div class="flex-center">01h</div>
+    <div class="flex-top">20h</div>
+    <div class="flex-top">21h</div>
+    <div class="flex-top">22h</div>
+    <div class="flex-top">23h</div>
+    <div class="flex-top">00h</div>
+    <div class="flex-top">01h</div>
 
     <div class="tournoi flex-center">
       Tournois du Dimanche
@@ -65,6 +65,12 @@ const games = {
   ssbu: {
     name: "ssbu",
   },
+  off: {
+    name: "off",
+  },
+  free: {
+    name: "libre",
+  },
 }
 
 export default {
@@ -94,18 +100,19 @@ export default {
       },
     ],
     planning: [
-      { day: 1, infos: games.botw, start: 1, duration: 4 },
-      { day: 1, infos: games.roboquest, start: 5, duration: 2 },
-      { day: 2, infos: games.botw, start: 1, duration: 4 },
-      { day: 2, infos: games.fallguys, start: 5, duration: 2 },
-      { day: 3, infos: games.botw, start: 1, duration: 4 },
-      { day: 3, infos: games.blairwitch, start: 5, duration: 2 },
-      { day: 4, infos: games.botw, start: 1, duration: 4 },
-      { day: 4, infos: games.roboquest, start: 5, duration: 2 },
-      { day: 5, infos: games.botw, start: 1, duration: 4 },
-      { day: 5, infos: games.fallguys, start: 5, duration: 2 },
-      { day: 7, infos: games.botw, start: 1, duration: 4 },
-      { day: 7, infos: games.roboquest, start: 5, duration: 2 },
+      { day: 1, infos: games.botw, start: 1, duration: 3 },
+      { day: 1, infos: games.roboquest, start: 4, duration: 3 },
+      { day: 2, infos: games.botw, start: 1, duration: 3 },
+      { day: 2, infos: games.fallguys, start: 4, duration: 3 },
+      { day: 3, infos: games.botw, start: 1, duration: 3 },
+      { day: 3, infos: games.blairwitch, start: 4, duration: 3 },
+      { day: 4, infos: games.botw, start: 1, duration: 3 },
+      { day: 4, infos: games.roboquest, start: 4, duration: 3 },
+      { day: 5, infos: games.botw, start: 1, duration: 3 },
+      { day: 5, infos: games.free, start: 4, duration: 3 },
+      { day: 6, infos: games.off, start: 1, duration: 6 },
+      { day: 7, infos: games.botw, start: 1, duration: 3 },
+      { day: 7, infos: games.free, start: 4, duration: 3 },
     ],
   }),
   methods: {
@@ -180,6 +187,10 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .flex-top {
+    display: flex;
+    justify-content: center;
   }
   .tournoi {
     grid-column: 1;
