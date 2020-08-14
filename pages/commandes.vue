@@ -159,6 +159,19 @@ export default {
           command: "!commands",
           description: "Liste des commandes",
         },
+        {
+          command: "!roboquest",
+          description: "Liste des liens utiles pour le jeu Roboquest",
+        },
+        {
+          command: "!palifen",
+          description:
+            "Permet d'obtenir les informations nécessaires pour rejoindre le serveur Minecraft Palifen",
+        },
+        {
+          command: "!multi",
+          description: "Obtenir le lien du multi stream",
+        },
       ].sort((a, b) => (a.command > b.command ? 1 : -1)),
     }
   },
