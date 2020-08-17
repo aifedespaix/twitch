@@ -172,6 +172,10 @@ export default {
           command: "!multi",
           description: "Obtenir le lien du multi stream",
         },
+        {
+          command: "!twitchplays",
+          description: "Obtenir le lien des commandes pour Twitch Plays",
+        },
       ].sort((a, b) => (a.command > b.command ? 1 : -1)),
     }
   },
