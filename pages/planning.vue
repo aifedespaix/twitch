@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="titlec">Planning du 10/08 au 16/08</div>
+    <div class="titlec">Planning du 17/08 au 23/08</div>
     <div></div>
     <div class="flex-center">Lundi</div>
     <div class="flex-center">Mardi</div>
@@ -71,6 +71,9 @@ const games = {
   free: {
     name: "libre",
   },
+  horizon: {
+    name: "horizon",
+  },
 }
 
 export default {
@@ -101,13 +104,13 @@ export default {
     ],
     planning: [
       { day: 1, infos: games.botw, start: 1, duration: 3 },
-      { day: 1, infos: games.roboquest, start: 4, duration: 3 },
+      { day: 1, infos: games.horizon, start: 4, duration: 3 },
       { day: 2, infos: games.botw, start: 1, duration: 3 },
-      { day: 2, infos: games.fallguys, start: 4, duration: 3 },
+      { day: 2, infos: games.horizon, start: 4, duration: 3 },
       { day: 3, infos: games.botw, start: 1, duration: 3 },
-      { day: 3, infos: games.blairwitch, start: 4, duration: 3 },
+      { day: 3, infos: games.free, start: 4, duration: 3 },
       { day: 4, infos: games.botw, start: 1, duration: 3 },
-      { day: 4, infos: games.roboquest, start: 4, duration: 3 },
+      { day: 4, infos: games.horizon, start: 4, duration: 3 },
       { day: 5, infos: games.botw, start: 1, duration: 3 },
       { day: 5, infos: games.free, start: 4, duration: 3 },
       { day: 6, infos: games.off, start: 1, duration: 6 },
