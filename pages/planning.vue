@@ -96,10 +96,12 @@ export default {
         infos: games.mariokart,
       },
       {
-        message: "SSBU de 15h à 17h",
+        message: "?",
+        // message: "SSBU de 15h à 17h",
         start: 5,
         end: 9,
-        infos: games.ssbu,
+        // infos: games.ssbu,
+        infos: games.off,
       },
     ],
     planning: [
@@ -114,8 +116,7 @@ export default {
       { day: 5, infos: games.botw, start: 1, duration: 3 },
       { day: 5, infos: games.free, start: 4, duration: 3 },
       { day: 6, infos: games.off, start: 1, duration: 6 },
-      { day: 7, infos: games.botw, start: 1, duration: 3 },
-      { day: 7, infos: games.free, start: 4, duration: 3 },
+      { day: 7, infos: games.free, start: 1, duration: 6 },
     ],
   }),
   methods: {
