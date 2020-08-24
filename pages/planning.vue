@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="titlec">Planning du 17/08 au 23/08</div>
+    <div class="titlec">Planning du 24/08 au 30/08</div>
     <div></div>
     <div class="flex-center">Lundi</div>
     <div class="flex-center">Mardi</div>
@@ -74,6 +74,9 @@ const games = {
   horizon: {
     name: "horizon",
   },
+  acnh: {
+    name: "acnh",
+  },
 }
 
 export default {
@@ -90,29 +93,35 @@ export default {
   data: () => ({
     tournaments: [
       {
-        message: "Mario Kart 8 de 14h à 15h",
+        message: "Off Air",
         start: 2,
-        end: 5,
-        infos: games.mariokart,
-      },
-      {
-        message: "?",
-        // message: "SSBU de 15h à 17h",
-        start: 5,
         end: 9,
-        // infos: games.ssbu,
         infos: games.off,
       },
+      // {
+      //   message: "Mario Kart 8 de 14h à 15h",
+      //   start: 2,
+      //   end: 5,
+      //   infos: games.mariokart,
+      // },
+      // {
+      //   message: "?",
+      //   // message: "SSBU de 15h à 17h",
+      //   start: 5,
+      //   end: 9,
+      //   // infos: games.ssbu,
+      //   infos: games.off,
+      // },
     ],
     planning: [
       { day: 1, infos: games.botw, start: 1, duration: 3 },
       { day: 1, infos: games.horizon, start: 4, duration: 3 },
-      { day: 2, infos: games.botw, start: 1, duration: 3 },
+      { day: 2, infos: games.acnh, start: 1, duration: 3 },
       { day: 2, infos: games.horizon, start: 4, duration: 3 },
-      { day: 3, infos: games.botw, start: 1, duration: 3 },
+      { day: 3, infos: games.horizon, start: 1, duration: 3 },
       { day: 3, infos: games.free, start: 4, duration: 3 },
-      { day: 4, infos: games.botw, start: 1, duration: 3 },
-      { day: 4, infos: games.horizon, start: 4, duration: 3 },
+      { day: 4, infos: games.acnh, start: 1, duration: 3 },
+      { day: 4, infos: games.botw, start: 4, duration: 3 },
       { day: 5, infos: games.botw, start: 1, duration: 3 },
       { day: 5, infos: games.free, start: 4, duration: 3 },
       { day: 6, infos: games.off, start: 1, duration: 6 },
