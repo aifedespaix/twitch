@@ -176,6 +176,18 @@ export default {
           command: "!twitchplays",
           description: "Obtenir le lien des commandes pour Twitch Plays",
         },
+        {
+          command: "!twitchplays",
+          description: "Obtenir le lien des commandes pour Twitch Plays",
+        },
+        {
+          command: "!codeami",
+          description: "Recupère mon code ami Switch",
+        },
+        {
+          command: "!prochainevideo",
+          description: "Pour savoir quand la prochaine vidéo va sortir !",
+        },
       ].sort((a, b) => (a.command > b.command ? 1 : -1)),
     }
   },
