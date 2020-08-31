@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="titlec">Planning du 24/08 au 30/08</div>
+    <div class="titlec">Planning du 31/08 au 06/09</div>
     <div></div>
     <div class="flex-center">Lundi</div>
     <div class="flex-center">Mardi</div>
@@ -24,16 +24,14 @@
       </div>
     </div>
 
+    <div class="flex-top">18h</div>
+    <div class="flex-top">19h</div>
     <div class="flex-top">20h</div>
     <div class="flex-top">21h</div>
     <div class="flex-top">22h</div>
     <div class="flex-top">23h</div>
-    <div class="flex-top">00h</div>
-    <div class="flex-top">01h</div>
 
-    <div class="tournoi flex-center">
-      Tournois du Dimanche
-    </div>
+    <div class="tournoi flex-center">Tournois du Dimanche</div>
     <div
       v-for="tournament in tournaments"
       :key="tournament.message"
@@ -77,18 +75,28 @@ const games = {
   acnh: {
     name: "acnh",
   },
+  smo: {
+    name: "odyssey",
+  },
 }
 
 export default {
   layout: "clear",
-  head: {
-    link: [
-      {
-        rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css2?family=Poppins:wght@1,500;1,900&display=swap",
-      },
-    ],
+  head() {
+    return {
+      ...this.$seo(
+        "Planning de la semaine",
+        "Retrouve le planning de la semaine de ma chaîne Twitch",
+        "planning"
+      ),
+      link: [
+        {
+          rel: "stylesheet",
+          href:
+            "https://fonts.googleapis.com/css2?family=Poppins:wght@1,500;1,900&display=swap",
+        },
+      ],
+    }
   },
   data: () => ({
     tournaments: [
@@ -104,28 +112,29 @@ export default {
       //   end: 5,
       //   infos: games.mariokart,
       // },
-      // {
-      //   message: "?",
-      //   // message: "SSBU de 15h à 17h",
-      //   start: 5,
-      //   end: 9,
-      //   // infos: games.ssbu,
-      //   infos: games.off,
-      // },
+      {
+        // message: "?",
+        message: "SSBU de 15h à 17h",
+        start: 2,
+        end: 9,
+        // infos: games.ssbu,
+        infos: games.ssbu,
+      },
     ],
     planning: [
-      { day: 1, infos: games.botw, start: 1, duration: 3 },
+      { day: 1, infos: games.acnh, start: 1, duration: 3 },
       { day: 1, infos: games.horizon, start: 4, duration: 3 },
-      { day: 2, infos: games.acnh, start: 1, duration: 3 },
-      { day: 2, infos: games.horizon, start: 4, duration: 3 },
+      { day: 2, infos: games.botw, start: 1, duration: 3 },
+      { day: 2, infos: games.smo, start: 4, duration: 3 },
       { day: 3, infos: games.horizon, start: 1, duration: 3 },
       { day: 3, infos: games.free, start: 4, duration: 3 },
       { day: 4, infos: games.acnh, start: 1, duration: 3 },
-      { day: 4, infos: games.botw, start: 4, duration: 3 },
+      { day: 4, infos: games.smo, start: 4, duration: 3 },
       { day: 5, infos: games.botw, start: 1, duration: 3 },
-      { day: 5, infos: games.free, start: 4, duration: 3 },
+      { day: 5, infos: games.smo, start: 4, duration: 3 },
       { day: 6, infos: games.off, start: 1, duration: 6 },
-      { day: 7, infos: games.free, start: 1, duration: 6 },
+      { day: 7, infos: games.free, start: 1, duration: 3 },
+      { day: 7, infos: games.smo, start: 4, duration: 3 },
     ],
   }),
   methods: {
@@ -215,6 +224,8 @@ export default {
     font-weight: bold;
     text-shadow: #000 5px 5px, #000 2px 2px, #000 1px 1px, #000 3px 3px,
       #000 4px 4px;
+    background-size: cover;
+    background-position: center center;
   }
 }
 </style>

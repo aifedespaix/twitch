@@ -52,7 +52,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    // "@nuxtjs/sitemap",
+    "@nuxtjs/sitemap",
     "@nuxt/content",
     [
       "nuxt-i18n",
@@ -86,9 +86,13 @@ export default {
         loader: "eslint-loader",
         exclude: /(node_modules)/,
       })
+      config.module.rules.push({
+        test: /\.svg$/,
+        loader: "vue-svg-loader",
+      })
     }
   },
-  buildModules: ["@nuxtjs/vuetify"],
+  buildModules: ["@nuxtjs/vuetify", "@nuxtjs/svg"],
   vuetify: {
     lang: {
       locales: { fr },
