@@ -15,7 +15,7 @@
           C'est gratuit si tu as un abonnement
           <span class="color-main">Twitch Prime</span> !
         </div>
-        <img src="/bio/prime.png" alt="sub prime" />
+        <img src="/bio/twitch-prime-logo.png" alt="sub prime" />
         <div>
           Tu gagnes l'accès à des
           <span class="color-main">émotes exclusives</span> !
