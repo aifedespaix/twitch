@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="titlec">Planning du 31/08 au 06/09</div>
+    <div class="titlec">Planning du 07/08 au 13/09</div>
     <div></div>
     <div class="flex-center">Lundi</div>
     <div class="flex-center">Mardi</div>
@@ -78,6 +78,9 @@ const games = {
   smo: {
     name: "odyssey",
   },
+  chat: {
+    name: "chat",
+  },
 }
 
 export default {
@@ -124,16 +127,16 @@ export default {
     planning: [
       { day: 1, infos: games.acnh, start: 1, duration: 3 },
       { day: 1, infos: games.horizon, start: 4, duration: 3 },
-      { day: 2, infos: games.botw, start: 1, duration: 3 },
+      { day: 2, infos: games.horizon, start: 1, duration: 3 },
       { day: 2, infos: games.smo, start: 4, duration: 3 },
-      { day: 3, infos: games.horizon, start: 1, duration: 3 },
+      { day: 3, infos: games.botw, start: 1, duration: 3 },
       { day: 3, infos: games.free, start: 4, duration: 3 },
       { day: 4, infos: games.acnh, start: 1, duration: 3 },
       { day: 4, infos: games.smo, start: 4, duration: 3 },
       { day: 5, infos: games.botw, start: 1, duration: 3 },
-      { day: 5, infos: games.smo, start: 4, duration: 3 },
+      { day: 5, infos: games.free, start: 4, duration: 3 },
       { day: 6, infos: games.off, start: 1, duration: 6 },
-      { day: 7, infos: games.free, start: 1, duration: 3 },
+      { day: 7, infos: games.chat, start: 1, duration: 3 },
       { day: 7, infos: games.smo, start: 4, duration: 3 },
     ],
   }),
