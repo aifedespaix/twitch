@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="titlec">Planning du 07/08 au 13/09</div>
+    <div class="titlec">Planning du 07/09 au 13/09</div>
     <div></div>
     <div class="flex-center">Lundi</div>
     <div class="flex-center">Mardi</div>
