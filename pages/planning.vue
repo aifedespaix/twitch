@@ -117,7 +117,8 @@ export default {
       // },
       {
         // message: "?",
-        message: "SSBU de 15h à 17h",
+        // message: "SSBU de 15h à 17h",
+        message: "ANNULÉ",
         start: 2,
         end: 9,
         // infos: games.ssbu,
