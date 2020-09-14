@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="titlec">Planning du 07/09 au 13/09</div>
+    <div class="titlec">Planning du 14/09 au 20/09</div>
     <div></div>
     <div class="flex-center">Lundi</div>
     <div class="flex-center">Mardi</div>
@@ -48,6 +48,9 @@ const games = {
   botw: {
     name: "botw",
   },
+  botwx: {
+    name: "botwx",
+  },
   fallguys: {
     name: "fallguys",
   },
@@ -80,6 +83,12 @@ const games = {
   },
   chat: {
     name: "chat",
+  },
+  trackmania: {
+    name: "trackmania",
+  },
+  undertale: {
+    name: "undertale",
   },
 }
 
@@ -117,8 +126,8 @@ export default {
       // },
       {
         // message: "?",
-        // message: "SSBU de 15h à 17h",
-        message: "ANNULÉ",
+        message: "SSBU de 15h à 17h (feat KEGAB ?)",
+        // message: "ANNULÉ",
         start: 2,
         end: 9,
         // infos: games.ssbu,
@@ -127,18 +136,21 @@ export default {
     ],
     planning: [
       { day: 1, infos: games.acnh, start: 1, duration: 3 },
-      { day: 1, infos: games.horizon, start: 4, duration: 3 },
-      { day: 2, infos: games.horizon, start: 1, duration: 3 },
+      { day: 1, infos: games.trackmania, start: 4, duration: 3 },
+
+      { day: 2, infos: games.botw, start: 1, duration: 3 },
       { day: 2, infos: games.smo, start: 4, duration: 3 },
-      { day: 3, infos: games.botw, start: 1, duration: 3 },
-      { day: 3, infos: games.free, start: 4, duration: 3 },
-      { day: 4, infos: games.acnh, start: 1, duration: 3 },
-      { day: 4, infos: games.smo, start: 4, duration: 3 },
-      { day: 5, infos: games.botw, start: 1, duration: 3 },
-      { day: 5, infos: games.free, start: 4, duration: 3 },
+
+      { day: 3, infos: games.undertale, start: 1, duration: 6 },
+
+      { day: 4, infos: games.botw, start: 1, duration: 3 },
+      { day: 4, infos: games.trackmania, start: 4, duration: 3 },
+
+      { day: 5, infos: games.botwx, start: 1, duration: 6 },
+
       { day: 6, infos: games.off, start: 1, duration: 6 },
-      { day: 7, infos: games.chat, start: 1, duration: 3 },
-      { day: 7, infos: games.smo, start: 4, duration: 3 },
+
+      { day: 7, infos: games.free, start: 1, duration: 6 },
     ],
   }),
   methods: {
