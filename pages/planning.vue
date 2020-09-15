@@ -90,6 +90,9 @@ const games = {
   undertale: {
     name: "undertale",
   },
+  hitman: {
+    name: "hitman",
+  },
 }
 
 export default {
@@ -136,7 +139,7 @@ export default {
     ],
     planning: [
       { day: 1, infos: games.acnh, start: 1, duration: 3 },
-      { day: 1, infos: games.trackmania, start: 4, duration: 3 },
+      { day: 1, infos: games.hitman, start: 4, duration: 3 },
 
       { day: 2, infos: games.botw, start: 1, duration: 3 },
       { day: 2, infos: games.smo, start: 4, duration: 3 },
@@ -144,7 +147,7 @@ export default {
       { day: 3, infos: games.undertale, start: 1, duration: 6 },
 
       { day: 4, infos: games.botw, start: 1, duration: 3 },
-      { day: 4, infos: games.trackmania, start: 4, duration: 3 },
+      { day: 4, infos: games.hitman, start: 4, duration: 3 },
 
       { day: 5, infos: games.botwx, start: 1, duration: 6 },
 
