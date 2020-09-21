@@ -1,7 +1,7 @@
 <template>
   <div class="main">
-    <div class="titlec">Planning du 14/09 au 20/09</div>
-    <div></div>
+    <div class="titlec">Planning du 21/09 au 27/09</div>
+    <div />
     <div class="flex-center">Lundi</div>
     <div class="flex-center">Mardi</div>
     <div class="flex-center">Mercredi</div>
@@ -17,10 +17,7 @@
         :style="gameStyle(game)"
         class="game"
       >
-        <v-img
-          class="logo"
-          :src="`/planning/${game.infos.name}-logo.png`"
-        ></v-img>
+        <v-img class="logo" :src="`/planning/${game.infos.name}-logo.png`" />
       </div>
     </div>
 
@@ -47,6 +44,12 @@
 const games = {
   botw: {
     name: "botw",
+  },
+  sunshine: {
+    name: "sunshine",
+  },
+  horror: {
+    name: "horror",
   },
   botwx: {
     name: "botwx",
@@ -97,22 +100,6 @@ const games = {
 
 export default {
   layout: "clear",
-  head() {
-    return {
-      ...this.$seo(
-        "Planning de la semaine",
-        "Retrouve le planning de la semaine de ma chaîne Twitch",
-        "planning"
-      ),
-      link: [
-        {
-          rel: "stylesheet",
-          href:
-            "https://fonts.googleapis.com/css2?family=Poppins:wght@1,500;1,900&display=swap",
-        },
-      ],
-    }
-  },
   data: () => ({
     tournaments: [
       {
@@ -129,7 +116,7 @@ export default {
       // },
       {
         // message: "?",
-        message: "SSBU de 15h à 17h (feat KEGAB ?)",
+        message: "Tournois de 15h à 17h",
         // message: "ANNULÉ",
         start: 2,
         end: 9,
@@ -141,15 +128,16 @@ export default {
       { day: 1, infos: games.acnh, start: 1, duration: 3 },
       { day: 1, infos: games.hitman, start: 4, duration: 3 },
 
-      { day: 2, infos: games.botw, start: 1, duration: 3 },
-      { day: 2, infos: games.smo, start: 4, duration: 3 },
+      { day: 2, infos: games.sunshine, start: 1, duration: 3 },
+      { day: 2, infos: games.botwx, start: 4, duration: 3 },
 
-      { day: 3, infos: games.undertale, start: 1, duration: 6 },
+      { day: 3, infos: games.sunshine, start: 1, duration: 3 },
+      { day: 3, infos: games.undertale, start: 4, duration: 3 },
 
       { day: 4, infos: games.botw, start: 1, duration: 3 },
       { day: 4, infos: games.hitman, start: 4, duration: 3 },
 
-      { day: 5, infos: games.botwx, start: 1, duration: 6 },
+      { day: 5, infos: games.horror, start: 1, duration: 6 },
 
       { day: 6, infos: games.off, start: 1, duration: 6 },
 
@@ -177,6 +165,22 @@ export default {
     time(h) {
       return h < 24 ? h : h - 24
     },
+  },
+  head() {
+    return {
+      ...this.$seo(
+        "Planning de la semaine",
+        "Retrouve le planning de la semaine de ma chaîne Twitch",
+        "planning"
+      ),
+      link: [
+        {
+          rel: "stylesheet",
+          href:
+            "https://fonts.googleapis.com/css2?family=Poppins:wght@1,500;1,900&display=swap",
+        },
+      ],
+    }
   },
 }
 </script>
