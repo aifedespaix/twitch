@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="titlec">Planning du 21/09 au 27/09</div>
+    <div class="titlec">Planning du 28/09 au 04/10</div>
     <div />
     <div class="flex-center">Lundi</div>
     <div class="flex-center">Mardi</div>
@@ -27,8 +27,7 @@
     <div class="flex-top">21h</div>
     <div class="flex-top">22h</div>
     <div class="flex-top">23h</div>
-
-    <div class="tournoi flex-center">Tournois du Dimanche</div>
+    <!-- <div class="tournoi flex-center">Tournois du Dimanche</div>
     <div
       v-for="tournament in tournaments"
       :key="tournament.message"
@@ -36,7 +35,7 @@
       class="game flex-center tournament"
     >
       {{ tournament.message }}
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -96,6 +95,15 @@ const games = {
   hitman: {
     name: "hitman",
   },
+  mars: {
+    name: "mars",
+  },
+  skyrim: {
+    name: "skyrim",
+  },
+  chathorror: {
+    name: "chathorror",
+  },
 }
 
 export default {
@@ -126,18 +134,19 @@ export default {
     ],
     planning: [
       { day: 1, infos: games.acnh, start: 1, duration: 3 },
-      { day: 1, infos: games.hitman, start: 4, duration: 3 },
+      { day: 1, infos: games.botwx, start: 4, duration: 3 },
 
-      { day: 2, infos: games.sunshine, start: 1, duration: 3 },
-      { day: 2, infos: games.botwx, start: 4, duration: 3 },
+      { day: 2, infos: games.skyrim, start: 1, duration: 3 },
+      { day: 2, infos: games.mars, start: 4, duration: 3 },
 
-      { day: 3, infos: games.sunshine, start: 1, duration: 3 },
-      { day: 3, infos: games.undertale, start: 4, duration: 3 },
+      { day: 3, infos: games.undertale, start: 1, duration: 3 },
+      { day: 3, infos: games.botwx, start: 4, duration: 3 },
 
-      { day: 4, infos: games.botw, start: 1, duration: 3 },
-      { day: 4, infos: games.hitman, start: 4, duration: 3 },
+      { day: 4, infos: games.skyrim, start: 1, duration: 3 },
+      { day: 4, infos: games.mars, start: 4, duration: 3 },
 
-      { day: 5, infos: games.horror, start: 1, duration: 6 },
+      { day: 5, infos: games.chathorror, start: 1, duration: 2 },
+      { day: 5, infos: games.horror, start: 3, duration: 4 },
 
       { day: 6, infos: games.off, start: 1, duration: 6 },
 
@@ -192,7 +201,7 @@ export default {
   background: linear-gradient(45deg, #1b4091, #028f4c);
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: auto auto repeat(7, 1fr);
+  grid-template-rows: auto auto repeat(6, 1fr);
   font-family: "Poppins";
   color: #fafafa;
   text-align: center;
