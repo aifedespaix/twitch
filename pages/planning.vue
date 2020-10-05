@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="titlec">Planning du 28/09 au 04/10</div>
+    <div class="titlec">Planning du 05/10 au 11/10</div>
     <div />
     <div class="flex-center">Lundi</div>
     <div class="flex-center">Mardi</div>
@@ -80,6 +80,9 @@ const games = {
   acnh: {
     name: "acnh",
   },
+  amongus: {
+    name: "amongus",
+  },
   smo: {
     name: "odyssey",
   },
@@ -103,6 +106,9 @@ const games = {
   },
   chathorror: {
     name: "chathorror",
+  },
+  botwlol: {
+    name: "botwlol",
   },
 }
 
@@ -136,17 +142,13 @@ export default {
       { day: 1, infos: games.acnh, start: 1, duration: 3 },
       { day: 1, infos: games.botwx, start: 4, duration: 3 },
 
-      { day: 2, infos: games.skyrim, start: 1, duration: 3 },
-      { day: 2, infos: games.mars, start: 4, duration: 3 },
+      { day: 2, infos: games.botwlol, start: 1, duration: 6 },
 
-      { day: 3, infos: games.undertale, start: 1, duration: 3 },
-      { day: 3, infos: games.botwx, start: 4, duration: 3 },
+      { day: 3, infos: games.amongus, start: 1, duration: 6 },
 
-      { day: 4, infos: games.skyrim, start: 1, duration: 3 },
-      { day: 4, infos: games.mars, start: 4, duration: 3 },
+      { day: 4, infos: games.horror, start: 1, duration: 6 },
 
-      { day: 5, infos: games.chathorror, start: 1, duration: 2 },
-      { day: 5, infos: games.horror, start: 3, duration: 4 },
+      { day: 5, infos: games.free, start: 2, duration: 5 },
 
       { day: 6, infos: games.off, start: 1, duration: 6 },
 
