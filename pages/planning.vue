@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="titlec">Planning du 05/10 au 11/10</div>
+    <div class="titlec">Planning du 12/10 au 18/10</div>
     <div />
     <div class="flex-center">Lundi</div>
     <div class="flex-center">Mardi</div>
@@ -44,14 +44,17 @@ const games = {
   botw: {
     name: "botw",
   },
-  sunshine: {
-    name: "sunshine",
+  botwlol: {
+    name: "botwlol",
   },
   horror: {
     name: "horror",
   },
   botwx: {
     name: "botwx",
+  },
+  sunshine: {
+    name: "sunshine",
   },
   fallguys: {
     name: "fallguys",
@@ -107,8 +110,8 @@ const games = {
   chathorror: {
     name: "chathorror",
   },
-  botwlol: {
-    name: "botwlol",
+  mm: {
+    name: "mm",
   },
 }
 
@@ -140,15 +143,16 @@ export default {
     ],
     planning: [
       { day: 1, infos: games.acnh, start: 1, duration: 3 },
-      { day: 1, infos: games.botwx, start: 4, duration: 3 },
+      { day: 1, infos: games.botwlol, start: 4, duration: 3 },
 
-      { day: 2, infos: games.botwlol, start: 1, duration: 6 },
+      { day: 2, infos: games.mm, start: 1, duration: 6 },
 
       { day: 3, infos: games.amongus, start: 1, duration: 6 },
 
-      { day: 4, infos: games.horror, start: 1, duration: 6 },
+      { day: 4, infos: games.botwlol, start: 1, duration: 3 },
+      { day: 4, infos: games.mm, start: 4, duration: 3 },
 
-      { day: 5, infos: games.free, start: 2, duration: 5 },
+      { day: 5, infos: games.horror, start: 2, duration: 5 },
 
       { day: 6, infos: games.off, start: 1, duration: 6 },
 
