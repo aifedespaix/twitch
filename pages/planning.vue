@@ -152,7 +152,7 @@ export default {
       { day: 4, infos: games.botwlol, start: 1, duration: 3 },
       { day: 4, infos: games.mm, start: 4, duration: 3 },
 
-      { day: 5, infos: games.horror, start: 2, duration: 5 },
+      { day: 5, infos: games.horror, start: 1, duration: 6 },
 
       { day: 6, infos: games.off, start: 1, duration: 6 },
 
