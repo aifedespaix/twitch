@@ -10,20 +10,20 @@
           Tu peux sub à la chaîne, c'est le meilleur moyen de
           <span class="color-main">me soutenir</span> !
         </div>
-        <img src="/bio/sub-1.png" alt="sub tiers 1" />
+        <img src="/bio/sub-1.png" alt="sub tiers 1" >
         <div>
           C'est gratuit si tu as un abonnement
           <span class="color-main">Twitch Prime</span> !
         </div>
-        <img src="/bio/twitch-prime-logo.png" alt="sub prime" />
+        <img src="/bio/twitch-prime-logo.png" alt="sub prime" >
         <div>
           Tu gagnes l'accès à des
           <span class="color-main">émotes exclusives</span> !
         </div>
         <div class="emotes">
-          <img src="bio/rage.png" alt="" />
-          <img src="bio/ez.png" alt="" />
-          <img src="bio/fear.png" alt="" />
+          <img src="bio/rage.png" alt="" >
+          <img src="bio/ez.png" alt="" >
+          <img src="bio/fear.png" alt="" >
         </div>
         <div>Tu gagnes également un badge devant ton nom</div>
         <div>Tu passes en priorité sur les chats lents !</div>

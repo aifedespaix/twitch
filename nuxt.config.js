@@ -6,9 +6,17 @@ export default {
 
   head: {
     titleTemplate: "%s - aife Twitch",
+    htmlAttrs: {
+      lang: "fr-FR",
+    },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content: "aife, le site cool",
+      },
       {
         hid: "twitter:site",
         property: "description",
@@ -25,9 +33,14 @@ export default {
         content: "summary",
       },
       {
+        name: "keywords",
+        content: "vidéos, glitch, français, zelda, speedrun, nintendo",
+      },
+
+      {
         hid: "og:site_name",
         property: "og:site_name",
-        content: "aife twitch",
+        content: "aife",
       },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
@@ -73,7 +86,21 @@ export default {
   /*
    ** Build configuration
    */
-  // build: {
+  build: {
+    extractCSS: true,
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: "styles",
+            test: /\.(css|vue)$/,
+            chunks: "all",
+            enforce: true,
+          },
+        },
+      },
+    },
+  },
   /*
    ** You can extend webpack config here
    */

@@ -1,5 +1,7 @@
 <template>
-  <v-app id="inspire"> <nuxt /></v-app>
+  <v-app id="inspire">
+    <nuxt />
+  </v-app>
 </template>
 
 <script>
