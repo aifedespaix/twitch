@@ -2,10 +2,12 @@
   <div>
     <h1>Concours de dessins Septembre 2020</h1>
     <h2>Thème : Monstre</h2>
+
     <p>
       Si vous êtes l'auteur d'un de ces dessins et que vous ne souhaitez pas le
       voir apparaitre ici, d'hésitez pas à me le faire savoir via Discord.
     </p>
+
     <p>Les images sont ordonnées de façon aléatoire.</p>
     <v-container>
       <v-row>
