@@ -56,7 +56,11 @@ import VueGallerySlideshow from "vue-gallery-slideshow"
 export default {
   components: { VueGallerySlideshow },
   head() {
-    return this.$seo("Accueil", "Page d'accueil de l'app Aife", "index")
+    return this.$seo(
+      "Concours Desssins Septembre 2020",
+      "Concours de dessins de Septembre 2020",
+      "index"
+    )
   },
   data: () => ({
     index: null,
