@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="titlec">Planning du 12/10 au 18/10</div>
+    <div class="titlec">Planning du 19/10 au 25/10</div>
     <div />
     <div class="flex-center">Lundi</div>
     <div class="flex-center">Mardi</div>
@@ -86,6 +86,9 @@ const games = {
   amongus: {
     name: "amongus",
   },
+  nintendologie: {
+    name: "nintendologie",
+  },
   smo: {
     name: "odyssey",
   },
@@ -142,21 +145,19 @@ export default {
       },
     ],
     planning: [
-      { day: 1, infos: games.acnh, start: 1, duration: 3 },
-      { day: 1, infos: games.botwlol, start: 4, duration: 3 },
+      { day: 1, infos: games.mm, start: 1, duration: 6 },
 
       { day: 2, infos: games.mm, start: 1, duration: 6 },
 
       { day: 3, infos: games.amongus, start: 1, duration: 6 },
 
-      { day: 4, infos: games.botwlol, start: 1, duration: 3 },
-      { day: 4, infos: games.mm, start: 4, duration: 3 },
+      { day: 4, infos: games.horror, start: 1, duration: 6 },
 
-      { day: 5, infos: games.horror, start: 1, duration: 6 },
+      { day: 5, infos: games.nintendologie, start: 2, duration: 4 },
 
       { day: 6, infos: games.off, start: 1, duration: 6 },
 
-      { day: 7, infos: games.free, start: 1, duration: 6 },
+      { day: 7, infos: games.botwx, start: 1, duration: 5 },
     ],
   }),
   methods: {
