@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="titlec">Planning du 19/10 au 25/10</div>
+    <div class="titlec">Planning du 26/10 au 01/11</div>
     <div />
     <div class="flex-center">Lundi</div>
     <div class="flex-center">Mardi</div>
@@ -116,6 +116,9 @@ const games = {
   mm: {
     name: "mm",
   },
+  halflife: {
+    name: "halflife",
+  },
 }
 
 export default {
@@ -147,17 +150,17 @@ export default {
     planning: [
       { day: 1, infos: games.mm, start: 1, duration: 6 },
 
-      { day: 2, infos: games.mm, start: 1, duration: 6 },
+      { day: 2, infos: games.halflife, start: 1, duration: 6 },
 
       { day: 3, infos: games.amongus, start: 1, duration: 6 },
 
-      { day: 4, infos: games.horror, start: 1, duration: 6 },
+      { day: 4, infos: games.botw, start: 1, duration: 6 },
 
-      { day: 5, infos: games.nintendologie, start: 2, duration: 4 },
+      { day: 5, infos: games.horror, start: 1, duration: 6 },
 
       { day: 6, infos: games.off, start: 1, duration: 6 },
 
-      { day: 7, infos: games.botwx, start: 1, duration: 5 },
+      { day: 7, infos: games.free, start: 1, duration: 6 },
     ],
   }),
   methods: {
