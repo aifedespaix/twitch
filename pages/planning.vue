@@ -1,10 +1,10 @@
 <template>
   <div class="main">
-    <div class="titlec">Planning du 26/10 au 01/11</div>
+    <div class="titlec">Planning du 02/11 au 08/11</div>
     <div />
     <div class="flex-center">Lundi</div>
     <div class="flex-center">Mardi</div>
-    <div class="flex-center">Mercredi</div>
+    <div class="flex-center">Mercredi 15h/20h</div>
     <div class="flex-center">Jeudi</div>
     <div class="flex-center">Vendredi</div>
     <div class="flex-center">Samedi</div>
@@ -119,6 +119,9 @@ const games = {
   halflife: {
     name: "halflife",
   },
+  halflife2: {
+    name: "halflife2",
+  },
 }
 
 export default {
@@ -150,11 +153,12 @@ export default {
     planning: [
       { day: 1, infos: games.mm, start: 1, duration: 6 },
 
-      { day: 2, infos: games.halflife, start: 1, duration: 6 },
+      { day: 2, infos: games.halflife2, start: 1, duration: 6 },
 
-      { day: 3, infos: games.amongus, start: 1, duration: 6 },
+      { day: 3, infos: games.free, start: 1, duration: 2 },
+      { day: 3, infos: games.botw, start: 3, duration: 3 },
 
-      { day: 4, infos: games.botw, start: 1, duration: 6 },
+      { day: 4, infos: games.amongus, start: 1, duration: 6 },
 
       { day: 5, infos: games.horror, start: 1, duration: 6 },
 
