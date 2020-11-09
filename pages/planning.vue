@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="titlec">Planning du 02/11 au 08/11</div>
+    <div class="titlec">Planning du 09/11 au 15/11</div>
     <div />
     <div class="flex-center">Lundi</div>
     <div class="flex-center">Mardi</div>
@@ -155,8 +155,7 @@ export default {
 
       { day: 2, infos: games.halflife2, start: 1, duration: 6 },
 
-      { day: 3, infos: games.free, start: 1, duration: 2 },
-      { day: 3, infos: games.botw, start: 3, duration: 3 },
+      { day: 3, infos: games.botw, start: 1, duration: 5 },
 
       { day: 4, infos: games.amongus, start: 1, duration: 6 },
 
