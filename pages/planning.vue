@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <div class="titlec">Planning du 09/11 au 15/11</div>
+    <div class="titlec">Planning du 16/11 au 22/11</div>
     <div />
     <div class="flex-center">Lundi</div>
     <div class="flex-center">Mardi</div>
@@ -122,6 +122,12 @@ const games = {
   halflife2: {
     name: "halflife2",
   },
+  fallout: {
+    name: "fallout",
+  },
+  hyrule: {
+    name: "hyrule",
+  },
 }
 
 export default {
@@ -151,15 +157,15 @@ export default {
       },
     ],
     planning: [
-      { day: 1, infos: games.mm, start: 1, duration: 6 },
+      { day: 1, infos: games.fallout, start: 1, duration: 6 },
 
-      { day: 2, infos: games.halflife2, start: 1, duration: 6 },
+      { day: 2, infos: games.free, start: 1, duration: 6 },
 
       { day: 3, infos: games.botw, start: 1, duration: 5 },
 
-      { day: 4, infos: games.amongus, start: 1, duration: 6 },
+      { day: 4, infos: games.hyrule, start: 1, duration: 6 },
 
-      { day: 5, infos: games.horror, start: 1, duration: 6 },
+      { day: 5, infos: games.hyrule, start: 1, duration: 6 },
 
       { day: 6, infos: games.off, start: 1, duration: 6 },
 
