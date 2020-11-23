@@ -157,17 +157,17 @@ export default {
       },
     ],
     planning: [
-      { day: 1, infos: games.fallout, start: 1, duration: 6 },
+      { day: 1, infos: games.hyrule, start: 1, duration: 6 },
 
-      { day: 2, infos: games.free, start: 1, duration: 6 },
+      { day: 2, infos: games.hyrule, start: 1, duration: 6 },
 
-      { day: 3, infos: games.botw, start: 1, duration: 5 },
+      { day: 3, infos: games.hyrule, start: 1, duration: 5 },
 
-      { day: 4, infos: games.hyrule, start: 1, duration: 6 },
+      { day: 4, infos: games.amongus, start: 1, duration: 6 },
 
-      { day: 5, infos: games.hyrule, start: 1, duration: 6 },
+      { day: 5, infos: games.horror, start: 1, duration: 6 },
 
-      { day: 6, infos: games.off, start: 1, duration: 6 },
+      { day: 6, infos: games.hyrule, start: 1, duration: 6 },
 
       { day: 7, infos: games.free, start: 1, duration: 6 },
     ],
