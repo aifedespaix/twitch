@@ -157,6 +157,11 @@ html {
     text-shadow: #000 0 0 5px;
     padding: 0.5rem;
   }
+  &_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .large {
@@ -173,8 +178,6 @@ html {
     grid-template-rows: auto 1fr auto;
 
     &_logo {
-      display: flex;
-      align-items: center;
       img {
         width: 100%;
       }
@@ -199,10 +202,6 @@ html {
     grid-template-columns: auto 1fr auto;
 
     &_logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
       img {
         height: 100px;
       }
@@ -210,10 +209,12 @@ html {
   }
   .dayName {
     position: absolute;
+    z-index: 2;
     left: 0;
     bottom: 0;
     font-size: 1.5rem;
-    padding-left: 0.5rem;
+    padding: 0.5rem;
+    text-shadow: #000 0 0 5px;
   }
 }
 
