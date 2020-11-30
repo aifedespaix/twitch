@@ -204,6 +204,7 @@ html {
     &_logo {
       img {
         height: 100px;
+        max-width: 50vw;
       }
     }
   }
