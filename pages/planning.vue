@@ -1,198 +1,73 @@
 <template>
-  <div class="main">
-    <div class="titlec">Planning du 23/11 au 29/11</div>
-    <div />
-    <div class="flex-center">Lundi</div>
-    <div class="flex-center">Mardi</div>
-    <div class="flex-center">Mercredi 15h/20h</div>
-    <div class="flex-center">Jeudi</div>
-    <div class="flex-center">Vendredi</div>
-    <div class="flex-center">Samedi</div>
-    <div class="flex-center">Dimanche</div>
-
-    <div class="planning">
-      <div
-        v-for="game in planning"
-        :key="game.day + game.infos.name"
-        :style="gameStyle(game)"
-        class="game"
-      >
-        <v-img class="logo" :src="`/planning/${game.infos.name}-logo.png`" />
+  <div :class="isLargeScreen ? 'large' : 'square'" class="planning">
+    <div class="header">
+      <div>Planning de la semaine</div>
+      <img
+        class="logo"
+        src="/planning-v2/logo_only_F-alpha.png"
+        alt="Logo aife"
+      />
+      <div>Du {{ planning.from }} au {{ planning.to }}</div>
+    </div>
+    <div class="infos">
+      <div class="day" :key="day.name" v-for="day in planning.days">
+        <div class="dayName">{{ day.name }}</div>
+        <div
+          class="game"
+          :style="gameStyle(game)"
+          :key="id"
+          v-for="(game, id) in day.games"
+        >
+          <div class="game_start">{{ game.from ? `${game.from}h` : "" }}</div>
+          <div class="game_logo">
+            <img :src="logo(game.img)" alt="" />
+          </div>
+          <div class="game_end">{{ game.to ? `${game.to}h` : "" }}</div>
+        </div>
       </div>
     </div>
-
-    <div class="flex-top">18h</div>
-    <div class="flex-top">19h</div>
-    <div class="flex-top">20h</div>
-    <div class="flex-top">21h</div>
-    <div class="flex-top">22h</div>
-    <div class="flex-top">23h</div>
-    <!-- <div class="tournoi flex-center">Tournois du Dimanche</div>
-    <div
-      v-for="tournament in tournaments"
-      :key="tournament.message"
-      :style="tournamentStyle(tournament)"
-      class="game flex-center tournament"
-    >
-      {{ tournament.message }}
-    </div> -->
+    <div class="footer">
+      <a target="_blank" href="https://twitch.tv/aifedesglitch"
+        >twitch.tv/aifedesglitch</a
+      >
+    </div>
   </div>
 </template>
 
 <script>
-const games = {
-  botw: {
-    name: "botw",
-  },
-  botwlol: {
-    name: "botwlol",
-  },
-  horror: {
-    name: "horror",
-  },
-  botwx: {
-    name: "botwx",
-  },
-  sunshine: {
-    name: "sunshine",
-  },
-  fallguys: {
-    name: "fallguys",
-  },
-  roboquest: {
-    name: "roboquest",
-  },
-  mariokart: {
-    name: "mariokart",
-  },
-  blairwitch: {
-    name: "blairwitch",
-  },
-  ssbu: {
-    name: "ssbu",
-  },
-  off: {
-    name: "off",
-  },
-  free: {
-    name: "libre",
-  },
-  horizon: {
-    name: "horizon",
-  },
-  acnh: {
-    name: "acnh",
-  },
-  amongus: {
-    name: "amongus",
-  },
-  nintendologie: {
-    name: "nintendologie",
-  },
-  smo: {
-    name: "odyssey",
-  },
-  chat: {
-    name: "chat",
-  },
-  trackmania: {
-    name: "trackmania",
-  },
-  undertale: {
-    name: "undertale",
-  },
-  hitman: {
-    name: "hitman",
-  },
-  mars: {
-    name: "mars",
-  },
-  skyrim: {
-    name: "skyrim",
-  },
-  chathorror: {
-    name: "chathorror",
-  },
-  mm: {
-    name: "mm",
-  },
-  halflife: {
-    name: "halflife",
-  },
-  halflife2: {
-    name: "halflife2",
-  },
-  fallout: {
-    name: "fallout",
-  },
-  hyrule: {
-    name: "hyrule",
-  },
-}
+import { Planning } from "~/content/planning"
 
 export default {
   layout: "clear",
   data: () => ({
-    tournaments: [
-      {
-        message: "Off Air",
-        start: 2,
-        end: 9,
-        infos: games.off,
-      },
-      // {
-      //   message: "Mario Kart 8 de 14h à 15h",
-      //   start: 2,
-      //   end: 5,
-      //   infos: games.mariokart,
-      // },
-      {
-        // message: "?",
-        message: "Tournois de 15h à 17h",
-        // message: "ANNULÉ",
-        start: 2,
-        end: 9,
-        // infos: games.ssbu,
-        infos: games.ssbu,
-      },
-    ],
-    planning: [
-      { day: 1, infos: games.hyrule, start: 1, duration: 6 },
-
-      { day: 2, infos: games.hyrule, start: 1, duration: 6 },
-
-      { day: 3, infos: games.hyrule, start: 1, duration: 5 },
-
-      { day: 4, infos: games.amongus, start: 1, duration: 6 },
-
-      { day: 5, infos: games.horror, start: 1, duration: 6 },
-
-      { day: 6, infos: games.hyrule, start: 1, duration: 6 },
-
-      { day: 7, infos: games.free, start: 1, duration: 6 },
-    ],
+    planning: Planning,
+    isLargeScreen: false,
   }),
   methods: {
+    logo(name) {
+      return `/planning-v2/${name}.png`
+    },
+    banner(name) {
+      return `/planning-v2/${name}.jpg`
+    },
     gameStyle(game) {
       return {
-        "grid-column": game.day,
-        "grid-row": `${game.start} / ${game.start + game.duration}`,
-        "background-image": this.background(game),
+        "background-image": `url(${this.banner(game.img)})`,
       }
     },
-    tournamentStyle(tournament) {
-      return {
-        "grid-column": `${tournament.start} / ${tournament.end}`,
-        "grid-row": 9,
-        "background-image": this.background(tournament, "-h"),
+    onResize() {
+      if (process.server) {
+        this.isLargeScreen = false
+      } else {
+        this.isLargeScreen = window.innerWidth > window.innerHeight
       }
     },
-    background(game, suffix = "") {
-      return `url(/planning/${game.infos.name}${suffix}.jpg)`
-    },
-    time(h) {
-      return h < 24 ? h : h - 24
-    },
+  },
+  mounted: function () {
+    this.$nextTick(function () {
+      this.onResize()
+    })
+    window.addEventListener("resize", this.onResize)
   },
   head() {
     return {
@@ -214,69 +89,141 @@ export default {
 </script>
 
 <style lang="scss">
-.main {
+html {
+  overflow: hidden;
+}
+.planning {
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, #1b4091, #028f4c);
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: auto auto repeat(6, 1fr);
+  background: linear-gradient(0.5turn, #028f4c, #1b4091);
+  overflow: hidden;
   font-family: "Poppins";
-  color: #fafafa;
-  text-align: center;
-  font-size: 1.6rem;
+  color: #fff;
+  display: grid;
+}
 
-  .titlec {
-    grid-column: span 8;
-    text-align: center;
-    font-size: 3rem;
-  }
+.day {
+  position: relative;
+  display: grid;
+}
 
-  .planning {
-    grid-column: 2 / 9;
-    grid-row: 3 / 9;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 2px;
-  }
-  .game {
-    position: relative;
-    background-size: cover;
-    background-position: center center;
-    margin-bottom: 3px;
-    cursor: pointer;
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
 
-    &:hover {
-      box-shadow: 0px 0px 18px 6px rgba(255, 255, 255, 0.75);
-    }
-  }
-  .logo {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-  .flex-center {
+  div {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5rem;
   }
-  .flex-top {
-    display: flex;
-    justify-content: center;
+}
+
+.logo {
+  width: 100px;
+}
+
+.infos {
+  display: grid;
+  grid-gap: 3px;
+}
+
+.day {
+  display: flex;
+  :hover {
+    filter: saturate(150%);
+    .game {
+      &_start,
+      &_end {
+        text-align: center;
+        font-size: 3rem;
+      }
+    }
   }
-  .tournoi {
-    grid-column: 1;
-    grid-row: 9;
+}
+
+.game {
+  flex: 1;
+  display: grid;
+  justify-content: space-between;
+  background-position: center center;
+  background-size: cover;
+  &_start,
+  &_end {
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: #000 0 0 5px;
+    padding: 0.5rem;
   }
-  .tournament {
-    color: #ffffff;
-    background: #ece9e9;
-    font-weight: bold;
-    text-shadow: #000 5px 5px, #000 2px 2px, #000 1px 1px, #000 3px 3px,
-      #000 4px 4px;
-    background-size: cover;
-    background-position: center center;
+}
+
+.large {
+  grid-template-rows: auto 1fr auto;
+
+  .infos {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .day {
+    grid-template-rows: auto 1fr;
+    flex-direction: column;
+  }
+  .game {
+    grid-template-rows: auto 1fr auto;
+
+    &_logo {
+      display: flex;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .dayName {
+    text-align: center;
+  }
+}
+
+.square {
+  grid-template-rows: auto 1fr auto;
+
+  .infos {
+    grid-template-rows: repeat(7, 1fr);
+  }
+  .day {
+    position: relative;
+  }
+  .game {
+    grid-template-columns: auto 1fr auto;
+
+    &_logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      img {
+        height: 100px;
+      }
+    }
+  }
+  .dayName {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+  }
+}
+
+.footer {
+  text-align: center;
+
+  a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: #fff;
   }
 }
 </style>
