@@ -50,7 +50,7 @@ export const Planning = {
         {
           img: G.flippe,
           from: 18,
-          to: 21,
+          to: 24,
         },
       ],
     },
