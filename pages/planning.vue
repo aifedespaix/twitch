@@ -224,7 +224,7 @@ html {
   a {
     font-size: 3rem;
     text-decoration: none;
-    color: #fff;
+    color: #fff !important;
   }
 }
 </style>
