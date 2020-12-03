@@ -1,29 +1,37 @@
 <template>
-  <v-container>
-    <v-row>
-      <input type="file" accept="video/*" @change="loadVideo" >
-    </v-row>
+  <div>
+    <div>
+      <input type="file" accept="video/*" @change="loadVideo" />
+    </div>
     <div class="timesTravel">
       <div class="list">
-        <v-btn @click="videoCursorMove(-60 * 60)"> -60 </v-btn>
-        <v-btn @click="videoCursorMove(-30 * 60)"> -30 </v-btn>
-        <v-btn @click="videoCursorMove(-10 * 60)"> -10 </v-btn>
-        <v-btn @click="videoCursorMove(-5 * 60)"> -5 </v-btn>
-        <v-btn @click="videoCursorMove(-1 * 60)"> -1 </v-btn>
-        <v-btn @click="videoCursorMove(-0.5 * 60)"> -0.5 </v-btn>
-        <v-btn @click="videoCursorMove(-0.25 * 60)"> -0.25 </v-btn>
-        <v-btn @click="videoCursorMove(-0.1 * 60)"> -0.1 </v-btn>
+        <v-btn @click="videoCursorMove(-60 * 3600)"> -1h </v-btn>
+        <v-btn @click="videoCursorMove(-60 * 1800)"> -30m </v-btn>
+        <v-btn @click="videoCursorMove(-60 * 600)"> +10m </v-btn>
+        <v-btn @click="videoCursorMove(-60 * 300)"> +5m </v-btn>
+        <v-btn @click="videoCursorMove(-60 * 60)"> -60s </v-btn>
+        <v-btn @click="videoCursorMove(-30 * 60)"> -30s </v-btn>
+        <v-btn @click="videoCursorMove(-10 * 60)"> -10s </v-btn>
+        <v-btn @click="videoCursorMove(-5 * 60)"> -5s </v-btn>
+        <v-btn @click="videoCursorMove(-1 * 60)"> -1s </v-btn>
+        <v-btn @click="videoCursorMove(-0.5 * 60)"> -0.5s </v-btn>
+        <v-btn @click="videoCursorMove(-0.25 * 60)"> -0.25s </v-btn>
+        <v-btn @click="videoCursorMove(-0.1 * 60)"> -0.1s </v-btn>
       </div>
       <video ref="player" />
       <div class="list">
-        <v-btn @click="videoCursorMove(60 * 60)"> +60 </v-btn>
-        <v-btn @click="videoCursorMove(30 * 60)"> +30 </v-btn>
-        <v-btn @click="videoCursorMove(10 * 60)"> +10 </v-btn>
-        <v-btn @click="videoCursorMove(5 * 60)"> +5 </v-btn>
-        <v-btn @click="videoCursorMove(1 * 60)"> +1 </v-btn>
-        <v-btn @click="videoCursorMove(0.5 * 60)"> +0.5 </v-btn>
-        <v-btn @click="videoCursorMove(0.25 * 60)"> +0.25 </v-btn>
-        <v-btn @click="videoCursorMove(0.1 * 60)"> +0.1 </v-btn>
+        <v-btn @click="videoCursorMove(60 * 3600)"> +1h </v-btn>
+        <v-btn @click="videoCursorMove(60 * 1800)"> +30m </v-btn>
+        <v-btn @click="videoCursorMove(60 * 600)"> +10m </v-btn>
+        <v-btn @click="videoCursorMove(60 * 300)"> +5m </v-btn>
+        <v-btn @click="videoCursorMove(60 * 60)"> +60s </v-btn>
+        <v-btn @click="videoCursorMove(30 * 60)"> +30s </v-btn>
+        <v-btn @click="videoCursorMove(10 * 60)"> +10s </v-btn>
+        <v-btn @click="videoCursorMove(5 * 60)"> +5s </v-btn>
+        <v-btn @click="videoCursorMove(1 * 60)"> +1s </v-btn>
+        <v-btn @click="videoCursorMove(0.5 * 60)"> +0.5s </v-btn>
+        <v-btn @click="videoCursorMove(0.25 * 60)"> +0.25s </v-btn>
+        <v-btn @click="videoCursorMove(0.1 * 60)"> +0.1s </v-btn>
       </div>
       <v-slider
         v-model="time"
@@ -33,83 +41,47 @@
         max="100"
       />
     </div>
-    <v-row>
-      <v-col>
-        <v-text-field
-          v-model="suffix"
-          required
-          label="Sufixe"
-          :rules="[(value) => !!value || 'Required.']"
-        />
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-btn @click="startAt()"> Start at </v-btn>
-      <v-btn @click="endAt()"> End at </v-btn>
-      <v-btn @click="addCommand()"> ADD </v-btn>
-    </v-row>
-    <v-row>
-      <v-col>
-        <v-row>
-          <!-- <v-col>
-            <v-text-field label="Filename" v-model="title" />
-          </v-col> -->
-        </v-row>
+    <div v-if="video">
+      <div class="metadatas">
+        <v-text-field v-model="id" type="number" label="Number"></v-text-field>
 
-        <!-- <v-row>
-          <v-col>
-            <v-text-field label="h" v-model="sh" />
-          </v-col>
-          <v-col>
-            <v-text-field label="m" v-model="sm" />
-          </v-col>
-          <v-col>
-            <v-text-field label="s" v-model="ss" />
-          </v-col>
-          <v-col>
-            <v-text-field label="fr" v-model="sf" />
-          </v-col>
-
-          <v-spacer />
-
-          <v-col>
-            <v-text-field label="h" v-model="eh" />
-          </v-col>
-          <v-col>
-            <v-text-field label="m" v-model="em" />
-          </v-col>
-          <v-col>
-            <v-text-field label="s" v-model="es" />
-          </v-col>
-          <v-col>
-            <v-text-field label="f" v-model="ef" />
-          </v-col>
-        </v-row> -->
-
-        <v-row>
-          <v-col>
-            <!-- <div>
-              ffmpeg -ss {{ from }} -i {{ title }}.mp4 -c copy -t {{ to }}
-              {{ title }}-{{ suffix }}-cuted.mp4
-            </div> -->
-            <v-text-field
-              v-for="command in commands"
-              :key="command"
-              :label="command.name"
-              :value="command.cmd"
-              readonly
-            />
-          </v-col>
-        </v-row>
-      </v-col>
-    </v-row>
-  </v-container>
+        <v-text-field v-model="suffix" required label="Sufixe" />
+      </div>
+      <div>
+        {{ video.currentTime }}
+      </div>
+      <div class="actions">
+        <v-btn @click="startAt()">{{ sh }}:{{ sm }}:{{ ss }}</v-btn>
+        <v-btn @click="addCommand()"> ADD </v-btn>
+        <v-btn @click="endAt()">{{ eh }}:{{ em }}:{{ es }}</v-btn>
+      </div>
+      <div class="commands">
+        <v-textarea
+          onClick="this.select();"
+          name="input-7-1"
+          label="Commandes"
+          :value="commandsList"
+        ></v-textarea>
+        <div>
+          <v-text-field
+            onClick="this.select();"
+            v-for="(id, command) in commands"
+            :key="id"
+            :label="command.name"
+            :value="command.cmd"
+            readonly
+          />
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
   data: () => ({
     commands: [],
+    video: null,
     title: "",
     sh: 0,
     sm: 0,
@@ -120,11 +92,15 @@ export default {
     es: 0,
     ef: 0,
     suffix: "",
+    id: 1,
   }),
   computed: {
-    videoLoaded: function () {
-      const videoNode = this.$refs["player"]
-      return videoNode !== undefined
+    commandsList: function () {
+      let commandsList = ""
+      for (let i = 0; i < this.commands.length; i++) {
+        commandsList += `${this.commands[i].cmd}\n`
+      }
+      return commandsList
     },
     time: {
       get() {
@@ -198,6 +174,7 @@ export default {
 
       var fileURL = URL.createObjectURL(file)
       videoNode.src = fileURL
+      this.video = videoNode
     },
     videoCursorMove(qte) {
       const videoNode = this.$refs["player"]
@@ -213,10 +190,18 @@ export default {
       this.sh = time.h
     },
     addCommand() {
+      let suffix = ""
+      if (this.suffix) {
+        suffix = `${this.suffix}-${this.id}`
+      } else {
+        suffix = `${this.id}`
+      }
+
       this.commands.push({
         name: `${this.title} ${this.suffix}`,
-        cmd: `ffmpeg -ss ${this.from} -i ${this.title}.mp4 -c copy -t ${this.to} ${this.title}-${this.suffix}-cuted.mp4`,
+        cmd: `ffmpeg -ss ${this.from} -i ${this.title}.mp4 -c copy -t ${this.to} ${this.title}-${suffix}-cuted.mp4`,
       })
+      this.id++
     },
     endAt() {
       const time = this.getVideoTime()
@@ -254,8 +239,9 @@ video {
 
 .timesTravel {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
+  justify-content: space-between;
 
   .list {
     display: flex;
@@ -265,5 +251,21 @@ video {
 
 .duration {
   grid-column: span 3;
+}
+
+.commands {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+}
+
+.metadatas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 </style>

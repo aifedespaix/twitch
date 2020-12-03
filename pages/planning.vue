@@ -1,7 +1,7 @@
 <template>
   <div :class="isLargeScreen ? 'large' : 'square'" class="planning">
     <div class="header">
-      <div>Planning de la semaine</div>
+      <div class="delete">Planning de la semaine</div>
       <img
         class="logo"
         src="/planning-v2/logo_only_F-alpha.png"
@@ -190,6 +190,13 @@ html {
 }
 
 .square {
+  .header {
+    max-width: 100vw;
+    .delete {
+      display: none;
+    }
+    grid-template-columns: 1fr auto;
+  }
   grid-template-rows: auto 1fr auto;
 
   .infos {
