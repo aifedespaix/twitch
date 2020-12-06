@@ -102,6 +102,10 @@ html {
   display: grid;
 }
 
+.game_logo img {
+  object-fit: contain;
+}
+
 .day {
   position: relative;
   display: grid;
@@ -128,6 +132,7 @@ html {
 .infos {
   display: grid;
   grid-gap: 3px;
+  max-width: 100vw;
 }
 
 .day {
