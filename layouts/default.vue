@@ -86,6 +86,7 @@ export default {
         active: true,
         action: "mdi-twitch",
         items: [
+          { title: "Planning", icon: "mdi-calendar", url: "/planning" },
           { title: "Merci", icon: "mdi-heart", url: "/remerciements" },
           {
             title: "Commandes",

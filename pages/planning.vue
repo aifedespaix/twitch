@@ -89,9 +89,6 @@ export default {
 </script>
 
 <style lang="scss">
-html {
-  overflow: hidden;
-}
 .planning {
   width: 100%;
   height: 100%;

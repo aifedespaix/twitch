@@ -24,7 +24,6 @@ Vue.prototype.$seo = (title, description, path) => {
         hid: "og:type",
         property: "og:type",
         value: "website",
-        // value: "website"
       },
       {
         hid: "og:locale",
