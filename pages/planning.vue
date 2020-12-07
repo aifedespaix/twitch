@@ -202,6 +202,7 @@ export default {
 }
 
 .square {
+  overflow: auto;
   .header {
     max-width: 100vw;
     .delete {
