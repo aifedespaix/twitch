@@ -39,7 +39,7 @@ export const Planning = {
         {
           img: G.botw,
           from: 14,
-          to: "18h30",
+          to: 18,
         },
       ],
     },
