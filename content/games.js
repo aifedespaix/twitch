@@ -5,4 +5,6 @@ export default {
   free: "free",
   off: "off",
   flippe: "aifedesflippe",
+  tp: "twillight-princess",
+  "botw-y": "botw-noY",
 }

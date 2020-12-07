@@ -7,7 +7,10 @@
         src="/planning-v2/logo_only_F-alpha.png"
         alt="Logo aife"
       />
-      <div>Du {{ planning.from }} au {{ planning.to }}</div>
+      <div>
+        Du {{ planning.from.getDate() }}/{{ planning.from.getMonth() }} au
+        {{ planning.to.getDate() }}/{{ planning.to.getMonth() }}
+      </div>
     </div>
     <div class="infos">
       <div class="day" :key="day.name" v-for="day in planning.days">
@@ -43,6 +46,13 @@ export default {
     planning: Planning,
     isLargeScreen: false,
   }),
+  filters: {
+    hour: function (value) {
+      if (!value) return ""
+      if (value === 24) return "00h"
+      return `${value}h`
+    },
+  },
   methods: {
     logo(name) {
       return `/planning-v2/${name}.png`
