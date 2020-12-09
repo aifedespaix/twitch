@@ -7,4 +7,5 @@ export default {
   flippe: "aifedesflippe",
   tp: "twillight-princess",
   "botw-y": "botw-noY",
+  cyberpunk: "cyberpunk",
 }

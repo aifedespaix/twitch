@@ -47,7 +47,7 @@ export const Planning = {
       name: "Jeudi",
       games: [
         {
-          img: G.among,
+          img: G.cyberpunk,
           from: 18,
           to: 24,
         },
@@ -57,7 +57,7 @@ export const Planning = {
       name: "Vendredi",
       games: [
         {
-          img: G.flippe,
+          img: G.cyberpunk,
           from: 18,
           to: 24,
         },
