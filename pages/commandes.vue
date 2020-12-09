@@ -47,6 +47,14 @@ export default {
           description: "Obtenir le lien du serveur discord",
         },
         {
+          command: "!tiktok",
+          description: "Obtenir le lien de mon Tiktok",
+        },
+        {
+          command: "!don",
+          description: "Obtenir le lien pour faire un don",
+        },
+        {
           command: "!davgen",
           description: "Obtenir le lien de la chaîne de Davgen",
         },
@@ -61,10 +69,6 @@ export default {
         {
           command: "!jairatequoi",
           description: "Pour savoir ce que vous avez raté !",
-        },
-        {
-          command: "!pkctoutnoir",
-          description: "Pour savoir pourquoi c'est tout noir !",
         },
         {
           command: "!raid",
@@ -93,10 +97,6 @@ export default {
         {
           command: "!pktutappellesaife",
           description: "Pourquoi tu t'appelles aife ?",
-        },
-        {
-          command: "!ckoitonprenom",
-          description: "C'est quoi ton prénom ?",
         },
         {
           command: "!ckoitonprenom",
@@ -177,16 +177,16 @@ export default {
           description: "Obtenir le lien des commandes pour Twitch Plays",
         },
         {
-          command: "!twitchplays",
-          description: "Obtenir le lien des commandes pour Twitch Plays",
-        },
-        {
           command: "!codeami",
           description: "Recupère mon code ami Switch",
         },
         {
           command: "!prochainevideo",
           description: "Pour savoir quand la prochaine vidéo va sortir !",
+        },
+        {
+          command: "!chefdoeuvre",
+          description: "Quel est l'intérêt de jouer à des chef d'œuvre",
         },
       ].sort((a, b) => (a.command > b.command ? 1 : -1)),
     }
