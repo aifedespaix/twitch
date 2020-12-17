@@ -2,6 +2,7 @@ import fr from "vuetify/es5/locale/fr"
 import { config } from "./config/aife.config"
 
 export default {
+  components: true,
   head: {
     titleTemplate: "%s - aife Twitch",
     htmlAttrs: {
