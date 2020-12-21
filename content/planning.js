@@ -1,6 +1,6 @@
 import G from "~/content/games"
 
-const date_from = new Date("2020-12-14T00:00:00")
+const date_from = new Date("2020-12-21T00:00:00")
 const date_to = new Date(date_from)
 date_to.setDate(date_from.getDate() + 6)
 
