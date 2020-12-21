@@ -12,7 +12,7 @@ export const Planning = {
       name: "Lundi",
       games: [
         {
-          img: G.tp,
+          img: G.off,
           from: 18,
           to: 24,
         },
@@ -22,7 +22,7 @@ export const Planning = {
       name: "Mardi",
       games: [
         {
-          img: G.tp,
+          img: G.off,
           from: 18,
           to: 24,
         },
@@ -32,7 +32,7 @@ export const Planning = {
       name: "Mercredi",
       games: [
         {
-          img: G.botw,
+          img: G.off,
           from: 15,
           to: 20,
         },
@@ -42,7 +42,7 @@ export const Planning = {
       name: "Jeudi",
       games: [
         {
-          img: G.botw,
+          img: G.off,
           from: 18,
           to: 24,
         },
@@ -52,13 +52,8 @@ export const Planning = {
       name: "Vendredi",
       games: [
         {
-          img: G.cyberpunk,
+          img: G.off,
           from: 18,
-          to: 21,
-        },
-        {
-          img: G.flippe,
-          from: 21,
           to: 24,
         },
       ],
@@ -77,7 +72,7 @@ export const Planning = {
       name: "Dimanche",
       games: [
         {
-          img: G.free,
+          img: G.off,
           from: 18,
           to: 24,
         },
