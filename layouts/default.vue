@@ -82,6 +82,23 @@ export default {
         items: [{ title: "Glitchs", icon: "mdi-bug", url: "/glitchs" }],
       },
       {
+        title: "Events",
+        active: true,
+        action: "mdi-calendar",
+        items: [
+          {
+            title: "Concours Dessin Septembre",
+            icon: "mdi-draw",
+            url: "/concours/dessins/2020-09",
+          },
+          {
+            title: "Concours Dessin Décembre",
+            icon: "mdi-draw",
+            url: "/concours/dessins/2020-12",
+          },
+        ],
+      },
+      {
         title: "Twitch",
         active: true,
         action: "mdi-twitch",
