@@ -5,7 +5,7 @@
 
     <p>
       Si vous êtes l'auteur d'un de ces dessins et que vous ne souhaitez pas le
-      voir apparaitre ici, d'hésitez pas à me le faire savoir via Discord.
+      voir apparaitre ici, n'hésitez pas à me le faire savoir via Discord.
     </p>
 
     <p>Les images sont ordonnées de façon aléatoire.</p>
@@ -57,7 +57,7 @@ export default {
   components: { VueGallerySlideshow },
   head() {
     return this.$seo(
-      "Concours Desssins Septembre 2020",
+      "Concours Dessins Septembre 2020",
       "Concours de dessins de Septembre 2020",
       "index"
     )
