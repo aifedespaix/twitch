@@ -4,8 +4,12 @@
       <div class="delete">Planning de la semaine</div>
       <img class="logo" :src="logo('logo_only_F-alpha')" alt="Logo aife" />
       <div>
-        Du {{ planning.from.getDate() }}/{{ planning.from.getMonth() }} au
-        {{ planning.to.getDate() }}/{{ planning.to.getMonth() }}
+        Du {{ planning.from.getDate() | numberSized(2) }}/{{
+          (planning.from.getMonth() + 1) | numberSized(2)
+        }}
+        au {{ planning.to.getDate() | numberSized(2) }}/{{
+          (planning.to.getMonth() + 1) | numberSized(2)
+        }}
       </div>
     </div>
     <div class="infos">
@@ -22,13 +26,8 @@
             <img :src="logo(game.img)" alt="" />
           </div>
           <div class="game_end">
-            {{
-              game.to
-                ? `${game.to === 24 ? "00" : game.to}h${
-                    game.more ? game.more : ""
-                  }`
-                : ""
-            }}
+            {{ game.to | hour }}
+            {{ game.more }}
           </div>
         </div>
       </div>

@@ -59,7 +59,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["~/plugins/seo.js"],
+  plugins: ["~/plugins/seo.js", "~/plugins/filters.js"],
   /*
    ** Nuxt.js modules
    */
