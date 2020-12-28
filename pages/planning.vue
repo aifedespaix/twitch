@@ -2,11 +2,7 @@
   <div :class="isLargeScreen ? 'large' : 'square'" class="planning">
     <div class="header">
       <div class="delete">Planning de la semaine</div>
-      <img
-        class="logo"
-        src="/planning-v2/logo_only_F-alpha.png"
-        alt="Logo aife"
-      />
+      <img class="logo" :src="logo('logo_only_F-alpha')" alt="Logo aife" />
       <div>
         Du {{ planning.from.getDate() }}/{{ planning.from.getMonth() }} au
         {{ planning.to.getDate() }}/{{ planning.to.getMonth() }}
@@ -25,7 +21,15 @@
           <div class="game_logo">
             <img :src="logo(game.img)" alt="" />
           </div>
-          <div class="game_end">{{ game.to ? `${game.to}h` : "" }}</div>
+          <div class="game_end">
+            {{
+              game.to
+                ? `${game.to === 24 ? "00" : game.to}h${
+                    game.more ? game.more : ""
+                  }`
+                : ""
+            }}
+          </div>
         </div>
       </div>
     </div>
@@ -55,10 +59,10 @@ export default {
   },
   methods: {
     logo(name) {
-      return `/planning-v2/${name}.png`
+      return `/planning/${name}.png`
     },
     banner(name) {
-      return `/planning-v2/${name}.jpg`
+      return `/planning/${name}.jpg`
     },
     gameStyle(game) {
       return {

@@ -2,7 +2,7 @@
   <div class="glitch">
     <h1>{{ glitch.title }}</h1>
     <p>{{ glitch.content }}</p>
-    <Sources :author="glitch.sources" />
+    <Sources :sources="glitch.sources" />
     <Rate :rate="glitch.difficulty" />
     <div>{{ glitch.sources }}</div>
     <div>{{ glitch.youtubeId }}</div>
