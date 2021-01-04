@@ -8,4 +8,5 @@ export default {
   tp: "twillight-princess",
   "botw-y": "botw-noY",
   ny: "nouvel-an",
+  retro: "retro",
 }

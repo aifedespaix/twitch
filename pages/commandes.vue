@@ -135,11 +135,6 @@ export default {
           description: "Pourquoi tu active pas les pouvoirs ?",
         },
         {
-          command: "!botwpktufaispasunshieldclip",
-          description:
-            "Pourquoi tu ne fait pas un shield clip durant les épreuves de l'épée ?",
-        },
-        {
           command: "!botwpktacettetenue",
           description: "Pourquoi tu as cette tenue ?",
         },
@@ -187,6 +182,10 @@ export default {
         {
           command: "!chefdoeuvre",
           description: "Quel est l'intérêt de jouer à des chef d'œuvre",
+        },
+        {
+          command: "!logique",
+          description: "Pour exprimer votre désarroi en terme de logique",
         },
       ].sort((a, b) => (a.command > b.command ? 1 : -1)),
     }

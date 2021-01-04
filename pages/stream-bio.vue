@@ -10,20 +10,20 @@
           Tu peux sub à la chaîne, c'est le meilleur moyen de
           <span class="color-main">me soutenir</span> !
         </div>
-        <img src="/bio/sub-1.png" alt="sub tiers 1" >
+        <img src="/bio/sub-1.png" alt="sub tiers 1" />
         <div>
           C'est gratuit si tu as un abonnement
           <span class="color-main">Twitch Prime</span> !
         </div>
-        <img src="/bio/twitch-prime-logo.png" alt="sub prime" >
+        <img src="/bio/twitch-prime-logo.png" alt="sub prime" />
         <div>
           Tu gagnes l'accès à des
           <span class="color-main">émotes exclusives</span> !
         </div>
         <div class="emotes">
-          <img src="bio/rage.png" alt="" >
-          <img src="bio/ez.png" alt="" >
-          <img src="bio/fear.png" alt="" >
+          <img src="bio/rage.png" alt="" />
+          <img src="bio/ez.png" alt="" />
+          <img src="bio/fear.png" alt="" />
         </div>
         <div>Tu gagnes également un badge devant ton nom</div>
         <div>Tu passes en priorité sur les chats lents !</div>
@@ -168,6 +168,13 @@
         <div>Je poste régulièrement des screenshots et petites vidéos !</div>
       </div>
     </div>
+    <div class="block block-tiktok">
+      <div class="title"><TiktokLogo class="tiktok-visu" />Tiktok</div>
+      <div class="content">
+        <div>Retrouve moi sur <span class="color-main">Tiktok</span> !</div>
+        <div>Tu y découvriras les meilleurs clips Twitch</div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -183,6 +190,7 @@ import CmdLogo from "~/assets/cmd.svg?inline"
 import ContactLogo from "~/assets/contact.svg?inline"
 import PlanningLogo from "~/assets/planning.svg?inline"
 import InstagramLogo from "~/assets/instagram.svg?inline"
+import TiktokLogo from "~/assets/tiktok.svg?inline"
 
 export default {
   components: {
@@ -191,6 +199,7 @@ export default {
     DiscordLogo,
     ThanksLogo,
     GiftLogo,
+    TiktokLogo,
     YoutubeLogo,
     ShopLogo,
     CmdLogo,
@@ -301,6 +310,9 @@ export default {
   &-planning {
     @include block(#ffea00);
   }
+  &-tiktok {
+    @include block(#ff004f);
+  }
   &-instagram {
     @include block(#be6060);
     .title {
@@ -338,5 +350,13 @@ export default {
     );
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
   }
+}
+.tiktok-visu {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50px !important;
+  height: 50px !important;
+  padding: 5px !important;
+  margin-right: 5px;
 }
 </style>
