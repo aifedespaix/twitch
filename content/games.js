@@ -9,4 +9,5 @@ export default {
   "botw-y": "botw-noY",
   ny: "nouvel-an",
   retro: "retro",
+  chat: "chat",
 }
