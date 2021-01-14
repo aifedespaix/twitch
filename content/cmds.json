@@ -1,0 +1,211 @@
+[
+  {
+    "name": ["discord"],
+    "message": "Voici le lien du Discord de aife : https://discord.com/invite/HVVbqVP",
+    "whisper": false,
+    "description": "Obtenir le lien du serveur discord"
+  },
+  {
+    "name": ["davgen"],
+    "message": "La meilleure chaîne musicale : https://www.youtube.com/channel/UCCIWHRSRoyLK7VsMaWVJZMw",
+    "whisper": false,
+    "description": "Obtenir le lien de la chaîne de Davgen"
+  },
+  {
+    "name": ["mariokart"],
+    "message": "Code : 0841-8821-4827",
+    "whisper": false,
+    "description": "Informations pour le tournoi Mario Kart"
+  },
+  { "name": ["codeami"], "message": "SW-3781-5938-0103", "whisper": false },
+  {
+    "name": ["jairatequoi"],
+    "message": "Tu as raté le début du live",
+    "whisper": false,
+    "description": "Pour savoir ce que vous avez raté !"
+  },
+  {
+    "name": ["planning"],
+    "message": "Retrouvez le planning du live : https://twitch.aife.io/planning",
+    "whisper": false,
+    "description": "Pour obtenir le lien du planning"
+  },
+  {
+    "name": ["raid"],
+    "message": "Les raids aident les streamers à envoyer leurs spectateurs sur une autre chaîne en direct à la fin de leur stream. Cela leur permet de présenter une nouvelle chaîne à leur public d'une façon amusante.",
+    "whisper": false,
+    "description": "Définition d'un raid"
+  },
+  {
+    "name": ["youtube"],
+    "message": "Chaîne Youtube Aife : https://www.youtube.com/channel/UCgzeNVQuYRUIt9D8g8y9emw",
+    "whisper": false,
+    "description": "Obtenir le lien de ma chaîne Youtube"
+  },
+  {
+    "name": ["vod"],
+    "message": "Chaîne Youtube Aife VOD : https://www.youtube.com/channel/UC9vkTv0-xpfkA7S2N4oMGFg",
+    "whisper": false,
+    "description": "Obtenir le lien de ma chaîne VOD"
+  },
+  {
+    "name": ["twitter"],
+    "message": "Twitter aifedesglitch : https://twitter.com/aifedesglitch",
+    "whisper": false,
+    "description": "Obtenir le lien de mon compte Twitter"
+  },
+  {
+    "name": ["instagram"],
+    "message": "https://www.instagram.com/aifedesglitch/",
+    "whisper": false,
+    "description": "Obtenir le lien de mon compte Instagram"
+  },
+  {
+    "name": ["pktutappellesaife"],
+    "message": "Parce-que c'est comme ça",
+    "whisper": false,
+    "description": "Pourquoi tu t'appelles aife ?"
+  },
+  {
+    "name": ["ckoitonprenom"],
+    "message": "Je n'ai pas envie de le donner.",
+    "whisper": false,
+    "description": "C'est quoi ton prénom ?"
+  },
+  {
+    "name": ["botwconsole"],
+    "message": "Je joue souvent sur l'émulateur CEMU car le jeu est plus beau.",
+    "whisper": false,
+    "description": "Tu joues sur quelle console ?"
+  },
+  {
+    "name": ["tutocemu"],
+    "message": "https://www.google.com/search?q=cemu+config+botw",
+    "whisper": false,
+    "description": "Comment configurer CEMU ?"
+  },
+  {
+    "name": ["botwclavier"],
+    "message": "Non",
+    "whisper": false,
+    "description": "Tu joues sur clavier ?"
+  },
+  {
+    "name": ["botwckoitamanette"],
+    "message": "Une manette de Xbox One",
+    "whisper": false,
+    "description": "Tu utilises quoi comme manette ?"
+  },
+  {
+    "name": [
+      "botwpkta3coeurs",
+      "botwpktactivepaslespouvoir",
+      "botwpktufaispasunshieldclip"
+    ],
+    "message": "Pour garder la difficulté et donc s'amuser",
+    "whisper": false,
+    "description": "Questions en rapport avec BOTW"
+  },
+  {
+    "name": ["botwpktacettetenue"],
+    "message": "Car je l'aime bien",
+    "whisper": false,
+    "description": "Pourquoi tu as cette tenue ?"
+  },
+  {
+    "name": ["botwcommentonatatenue"],
+    "message": "https://www.youtube.com/watch?v=SyS2JwZZu7s",
+    "whisper": false,
+    "description": "Comment on récupère ta tenue ?"
+  },
+  {
+    "name": ["botwtacombiendheuredejeu"],
+    "message": "Je sais pas, j'ai 40 parties et j'ai pas compté, environ 500 heures.",
+    "whisper": false,
+    "description": "Tu as combien d'heure de jeu ?"
+  },
+  {
+    "name": ["config"],
+    "message": "**Boitier** Corsair Obsidian 750D Airflow **Alim** Corsair RM850x **Carte Mère** Gigabyte Z390 AORUS **Carte Graphique** MSI GEFORCE RTX 2070 ARMOR 8G **RAM** 16 Go Corsair Vengeance LPX (2x8) **Processeur** Intel Core i9-9900K 3.6GHz **Ventirad** Noctua NH-D15 **Memoire** Samsung SSD 860 EVO",
+    "whisper": true,
+    "description": "Quelle est ma config ?"
+  },
+  {
+    "name": ["commands", "cmds", "help"],
+    "message": "https://twitch.aife.io/commandes",
+    "whisper": false,
+    "description": "Liste des commandes"
+  },
+  {
+    "name": ["palifen"],
+    "message": "ip : palifen.ml (version 1.16.2) discord : https://discord.gg/v3AnhFh",
+    "whisper": false,
+    "description": "Permet d'obtenir les informations nécessaires pour rejoindre le serveur Minecraft Palifen"
+  },
+  {
+    "name": ["prochainevideo"],
+    "message": "Il n'y aura jamais de nouvelle vidéo, je viens de supprimer la chaîne",
+    "whisper": false,
+    "description": "C'est quand ta prochaine vidéo ?"
+  },
+  {
+    "name": ["mo"],
+    "message": "Glitch du Menu Overloading https://youtu.be/EXACxtOTovg",
+    "whisper": false,
+    "description": "C'est quoi le Menu Overlaoding ?"
+  },
+  {
+    "name": ["windbomb"],
+    "message": "Glitch du windbomb (ou bomb impact launch) https://youtu.be/nhE8Ll7nePY",
+    "whisper": false,
+    "description": "C'est quoi le Wind Bomb ?"
+  },
+  {
+    "name": ["chefdoeuvre"],
+    "message": "je comprends pas l'interet de jouer a des chef d'oeuvre du jeu video pour les bacler et pas en profiter surtout se titre apres c'est pas une critique ni un repoche je comprends juste pas le plaisir pour ma part . car beaucoup de jeu propose du tryharde ou world record enfin pour en finir si se style de jeu etait reconnu il aurais pas 32 viewers",
+    "whisper": false,
+    "description": "Quel est l'intérêt de jouer à des chef d'œuvre ?"
+  },
+  {
+    "name": ["tujouakwa"],
+    "message": "Regarde la catégorie du stream 😉",
+    "whisper": false,
+    "description": "Tu joues à quoi ?"
+  },
+  {
+    "name": ["don"],
+    "message": "Vous pouvez faire un don sur https://streamlabs.com/aifedesglitch/tip",
+    "whisper": false,
+    "description": "Obtenir le lien pour faire un don"
+  },
+  {
+    "name": ["paye"],
+    "message": "Paye et tu verras aifedeWtf",
+    "whisper": false,
+    "description": "Pour répondre aux questions des gens qui veulent connaître l'utilité de telle ou telle récompense"
+  },
+  {
+    "name": ["google"],
+    "message": "Google est ton ami Kappa",
+    "whisper": false,
+    "description": "Pour répondre aux gens qui savent pas utiliser Google."
+  },
+  {
+    "name": ["tiktok"],
+    "message": "https://www.tiktok.com/@aife_officiel",
+    "whisper": false,
+    "description": "Obtenir le lien de mon Tiktok"
+  },
+  {
+    "name": ["logique"],
+    "message": "Sérieux tu me désole quand je te regarde jouer.c'est de la logique les zelda toi t'es illogique bref ca m'a gaver bonne continuation",
+    "whisper": false,
+    "description": "Pour exprimer votre désaroie quand je fais un truc pas logique."
+  },
+  {
+    "name": ["shop"],
+    "message": "https://teespring.com/stores/aife-3",
+    "whisper": false,
+    "description": "Obtenir le lien du AifeDesShop"
+  }
+]
