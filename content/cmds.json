@@ -180,7 +180,7 @@
   },
   {
     "name": ["paye"],
-    "message": "Paye et tu verras aifedeWtf",
+    "message": "Paye et tu veras aifedeWtf",
     "whisper": false,
     "description": "Pour répondre aux questions des gens qui veulent connaître l'utilité de telle ou telle récompense"
   },
@@ -207,5 +207,16 @@
     "message": "https://teespring.com/stores/aife-3",
     "whisper": false,
     "description": "Obtenir le lien du AifeDesShop"
+  },
+  {
+    "name": ["lead"],
+    "message": "Devenir leader permet d'interagir avec le stream. Il va pouvoir incrémenter le compteur de mort, korogu ou tout autre variable suceptible d'évoluer durant le stream. Pour être leader, faites !leader dans le chat. Si vous obtenez le lead, vous l'êtes pendant 10 min. Pour connaître les commandes quand vous êtes leader faites !incrementer.",
+    "whisper": false,
+    "description": "Ça sert à quoi le leader ?"
+  },
+  {
+    "message": "https://twitch.aife.io/remerciements",
+    "whisper": false,
+    "name": ["merci"]
   }
 ]

@@ -1,0 +1,172 @@
+{
+  "zeldas": [
+    {
+      "name": "Breath of the Wild",
+      "annee": 2017,
+      "date": "Souvent",
+      "percent": "any%",
+      "plateforme": "Wii U / Switch"
+    },
+    {
+      "name": "Majora's Mask 3D",
+      "annee": "2000 / 2015",
+      "date": "12/2020",
+      "percent": "any%",
+      "commentaire": "All Masks",
+      "plateforme": "3DS"
+    },
+    {
+      "name": "Twilight Princess HD",
+      "annee": "2006 / 2016",
+      "date": "01/2021",
+      "percent": "any%",
+      "plateforme": "Wii U"
+    },
+    {
+      "name": "Minish Cap",
+      "annee": 2004,
+      "date": "01/2021",
+      "percent": "any%",
+      "plateforme": "Game Boy Advance"
+    }
+  ],
+  "aifedesflippe": [
+    {
+      "name": "Blair Witch",
+      "annee": 2019,
+      "date": "08/2020",
+      "percent": "any%",
+      "plateforme": "PC"
+    },
+    {
+      "name": "Resident Evil 7",
+      "annee": 2017,
+      "date": "010/2020",
+      "percent": "any%",
+      "plateforme": "PC"
+    }
+  ],
+  "games": [
+    {
+      "name": "Paper Mario: The Origami King",
+      "annee": 2020,
+      "date": "07/2020",
+      "percent": "any%",
+      "plateforme": "Switch"
+    },
+    {
+      "name": "Portal",
+      "annee": 2007,
+      "date": "2020",
+      "percent": "any%",
+      "plateforme": "PC"
+    },
+    {
+      "name": "Black Mesa",
+      "annee": 2012,
+      "date": "2020",
+      "percent": "any%",
+      "plateforme": "PC"
+    },
+    {
+      "name": "Half Life 2",
+      "annee": 2004,
+      "date": "2020",
+      "percent": "any%",
+      "plateforme": "PC"
+    },
+    {
+      "name": "Super Mario Odyssey",
+      "annee": 2017,
+      "date": "10/2020",
+      "percent": "any%",
+      "plateforme": "Switch"
+    },
+    {
+      "name": "Horizon Zero Dawn",
+      "annee": 2020,
+      "date": "10/2020",
+      "percent": "RageQuit",
+      "plateforme": "PC"
+    },
+    {
+      "name": "Mirror's Edge",
+      "annee": 2007,
+      "date": "09/2020",
+      "percent": "any%",
+      "plateforme": "PC"
+    },
+    {
+      "name": "Hyrule Warriors : L'Ère du Fléau",
+      "annee": 2020,
+      "date": "11/2020",
+      "percent": "any%",
+      "plateforme": "Switch"
+    },
+    {
+      "name": "Animal Crossing : New Horizons",
+      "annee": 2020,
+      "date": "09/2020",
+      "percent": "any%",
+      "plateforme": "Switch"
+    }
+  ],
+  "vintage": [
+    {
+      "name": "Bob l'éponge : Silence on tourne ! ",
+      "annee": 2005,
+      "date": "01/2020",
+      "percent": "any%",
+      "plateforme": "Game Boy Advance"
+    },
+    {
+      "name": "Disney's Tarzan: Return to the Jungle",
+      "annee": 2002,
+      "date": "01/2020",
+      "percent": "abandon",
+      "plateforme": "Game Boy Advance"
+    },
+    {
+      "name": "Disney Princesse",
+      "annee": 2002,
+      "date": "01/2020",
+      "percent": "abandon",
+      "plateforme": "Game Boy Advance"
+    },
+    {
+      "name": "Star Wars Episode II : L'Attaque des Clones",
+      "annee": 2002,
+      "date": "01/2020",
+      "percent": "abandon",
+      "plateforme": "Game Boy Advance"
+    },
+    {
+      "name": "Mario Party Advance",
+      "annee": 2005,
+      "date": "01/2020",
+      "percent": "abandon",
+      "plateforme": "Game Boy Advance"
+    },
+    {
+      "name": "Tekken Advance",
+      "annee": 2001,
+      "date": "01/2020",
+      "percent": "abandon",
+      "plateforme": "Game Boy Advance"
+    },
+    {
+      "name": "Avatar : Le Dernier Maître de l'Air",
+      "annee": 2006,
+      "date": "01/2020",
+      "percent": "abandon",
+      "plateforme": "Game Boy Advance"
+    },
+    {
+      "name": "Crash Bandicoot : Warped",
+      "annee": 1998,
+      "date": "01/2020",
+      "percent": "any%",
+      "plateforme": "PlayStation 1"
+    }
+  ]
+}
