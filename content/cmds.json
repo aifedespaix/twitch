@@ -230,5 +230,11 @@
     "whisper": false,
     "name": ["crowd", "conwdcontrol"],
     "description": "C'est quoi le Crowd Control ?"
+  },
+  {
+    "message": "Car ça marche qu'en Anglais",
+    "whisper": false,
+    "name": ["anglais"],
+    "description": "Pourquoi le Crowd Control est en Anglais ?"
   }
 ]
