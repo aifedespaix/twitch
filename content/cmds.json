@@ -17,7 +17,12 @@
     "whisper": false,
     "description": "Informations pour le tournoi Mario Kart"
   },
-  { "name": ["codeami"], "message": "SW-3781-5938-0103", "whisper": false },
+  {
+    "name": ["codeami"],
+    "message": "SW-3781-5938-0103",
+    "whisper": false,
+    "description": "C'est quoi ton code ami ?"
+  },
   {
     "name": ["jairatequoi"],
     "message": "Tu as raté le début du live",
@@ -217,6 +222,13 @@
   {
     "message": "https://twitch.aife.io/remerciements",
     "whisper": false,
-    "name": ["merci"]
+    "name": ["merci"],
+    "description": "Page de remerciements"
+  },
+  {
+    "message": "En Français, \"Crowd Control\" ça veut dire : \"contrôle par la foule\". Le concept est simple : je joue à Breath of the Wild, et VOUS : le chat, pouvez influer sur le jeu.",
+    "whisper": false,
+    "name": ["crowd", "conwdcontrol"],
+    "description": "C'est quoi le Crowd Control ?"
   }
 ]
