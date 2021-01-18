@@ -10,4 +10,5 @@ export default {
   ny: "nouvel-an",
   retro: "retro",
   chat: "chat",
+  minish: "minish",
 }

@@ -136,7 +136,7 @@
     "description": "Quelle est ma config ?"
   },
   {
-    "name": ["commands", "cmds", "help"],
+    "name": ["commands", "cmds", "cmd", "help"],
     "message": "https://twitch.aife.io/commandes",
     "whisper": false,
     "description": "Liste des commandes"
@@ -234,7 +234,25 @@
   {
     "message": "Car ça marche qu'en Anglais",
     "whisper": false,
-    "name": ["anglais"],
+    "name": ["crowdanglais"],
     "description": "Pourquoi le Crowd Control est en Anglais ?"
+  },
+  {
+    "message": "Pour avoir vos 50 pièces, il faut simplement aller dans la fenêtre \"coin\" de l'extension. Il y a les Free Coins, cliquez dessus et hop, vous aurez vos pièces.",
+    "whisper": false,
+    "name": ["crowdfree"],
+    "description": "Comment obtenir les x50 Crowd Coins gratuit ?"
+  },
+  {
+    "message": "Vous pouvez récupérer des Crowd Control Coins en payant avec des bits dans l'onglet \"coins\" ainsi que des coins gratuits avec votre abonnement à la chaine dans l'onglet \"subscribe\" ainsi qu'en payant des points de chaine. Il y a un temps de latence afin que tout le monde ne récupère pas des points en chaine.",
+    "whisper": false,
+    "name": ["crowdcoins"],
+    "description": "C'est quoi les Crowd Control Coins ?"
+  },
+  {
+    "message": "Il y a un temps d'attente entre la récupération des Crowd Control Coins afin que les viewers ne surchargent pas la récupération.",
+    "whisper": false,
+    "name": ["crowdwait"],
+    "description": "Pourquoi c'est marqué stock indisponible ?"
   }
 ]
