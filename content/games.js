@@ -11,4 +11,5 @@ export default {
   retro: "retro",
   chat: "chat",
   minish: "minish",
+  acnh: "acnh",
 }

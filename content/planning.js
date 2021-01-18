@@ -58,7 +58,7 @@ export const Planning = {
           to: 20,
         },
         {
-          img: G.among,
+          img: G.flippe,
           from: 20,
           to: 24,
         },
