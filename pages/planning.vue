@@ -33,9 +33,7 @@
       </div>
     </div>
     <div class="footer">
-      <a target="_blank" href="https://twitch.tv/aifedesglitch"
-        >twitch.tv/aifedesglitch</a
-      >
+      <a target="_blank" href="https://twitch.tv/AifeTV">twitch.tv/AifeTV</a>
     </div>
   </div>
 </template>
