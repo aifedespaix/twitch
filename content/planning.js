@@ -89,11 +89,11 @@ export const Planning = {
         {
           img: G.ssbu,
           from: 18,
-          to: 24,
+          to: 21,
         },
         {
           img: G.acnh,
-          from: 18,
+          from: 21,
           to: 24,
         },
       ],
