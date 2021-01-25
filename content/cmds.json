@@ -55,13 +55,13 @@
   },
   {
     "name": ["twitter"],
-    "message": "Twitter aifedesglitch : https://twitter.com/aifedesglitch",
+    "message": "Twitter AifeTV : https://twitter.com/AifeTV",
     "whisper": false,
     "description": "Obtenir le lien de mon compte Twitter"
   },
   {
     "name": ["instagram"],
-    "message": "https://www.instagram.com/aifedesglitch/",
+    "message": "https://www.instagram.com/AifeTV/",
     "whisper": false,
     "description": "Obtenir le lien de mon compte Instagram"
   },
@@ -185,7 +185,7 @@
   },
   {
     "name": ["paye"],
-    "message": "Paye et tu veras aifedeWtf",
+    "message": "Paye et tu veras aifetvWtf",
     "whisper": false,
     "description": "Pour répondre aux questions des gens qui veulent connaître l'utilité de telle ou telle récompense"
   },
@@ -197,7 +197,7 @@
   },
   {
     "name": ["tiktok"],
-    "message": "https://www.tiktok.com/@aife_officiel",
+    "message": "https://www.tiktok.com/@AifeTV",
     "whisper": false,
     "description": "Obtenir le lien de mon Tiktok"
   },

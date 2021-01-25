@@ -12,4 +12,7 @@ export default {
   chat: "chat",
   minish: "minish",
   acnh: "acnh",
+  smo: "smo",
+  oot: "oot",
+  ssbu: "ssbu",
 }
