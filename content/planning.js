@@ -1,6 +1,6 @@
 import G from "~/content/games"
 
-const date_from = new Date("2020-01-25T00:00:00")
+const date_from = new Date("2020-02-01T00:00:00")
 const date_to = new Date(date_from)
 date_to.setDate(date_from.getDate() + 6)
 
@@ -47,12 +47,12 @@ export const Planning = {
       name: "Jeudi",
       games: [
         {
-          img: G.chat,
+          img: G.smo,
           from: 18,
           to: 21,
         },
         {
-          img: G.smo,
+          img: G.chat,
           from: 21,
           to: 24,
         },
