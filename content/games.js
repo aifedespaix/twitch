@@ -15,4 +15,5 @@ export default {
   smo: "smo",
   oot: "oot",
   ssbu: "ssbu",
+  alttp: "alttp",
 }
