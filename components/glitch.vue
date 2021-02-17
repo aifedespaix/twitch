@@ -88,7 +88,7 @@
 })
 class Glitch extends Vue {
   @Prop({ required: true })
-  public glitch!: any
+  public glitch: any
 
   public similarGlitchs = []
 
