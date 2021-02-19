@@ -226,40 +226,10 @@
     "description": "Page de remerciements"
   },
   {
-    "message": "En Français, \"Crowd Control\" ça veut dire : \"contrôle par la foule\". Le concept est simple : je joue à Breath of the Wild, et VOUS : le chat, pouvez influer sur le jeu.",
+    "message": "En Français, Crowd Control ça veut dire : contrôle par la foule. Le concept est simple : je joue à Breath of the Wild, et VOUS pouvez influer sur le jeu. Vous pouvez récupérer des Crowd Control Coins en payant avec des bits dans l'onglet coins ainsi que des coins gratuits avec votre abonnement à la chaine dans l'onglet subscribe ou avec des points de chaine. Le jeu est en anglais car le Crowd Control ne fonctionne qu'avec la version US.",
     "whisper": false,
-    "name": ["crowd", "conwdcontrol"],
+    "name": ["crowd", "crowdcontrol"],
     "description": "C'est quoi le Crowd Control ?"
-  },
-  {
-    "message": "Car ça marche qu'en Anglais",
-    "whisper": false,
-    "name": ["crowdanglais"],
-    "description": "Pourquoi le Crowd Control est en Anglais ?"
-  },
-  {
-    "message": "Pour avoir vos 50 pièces, il faut simplement aller dans la fenêtre \"coin\" de l'extension. Il y a les Free Coins, cliquez dessus et hop, vous aurez vos pièces.",
-    "whisper": false,
-    "name": ["crowdfree"],
-    "description": "Comment obtenir les x50 Crowd Coins gratuit ?"
-  },
-  {
-    "message": "Vous pouvez récupérer des Crowd Control Coins en payant avec des bits dans l'onglet \"coins\" ainsi que des coins gratuits avec votre abonnement à la chaine dans l'onglet \"subscribe\" ainsi qu'en payant des points de chaine. Il y a un temps de latence afin que tout le monde ne récupère pas des points en chaine.",
-    "whisper": false,
-    "name": ["crowdcoins"],
-    "description": "C'est quoi les Crowd Control Coins ?"
-  },
-  {
-    "message": "Il y a un temps d'attente entre la récupération des Crowd Control Coins afin que les viewers ne surchargent pas la récupération.",
-    "whisper": false,
-    "name": ["crowdwait"],
-    "description": "Pourquoi c'est marqué stock indisponible ?"
-  },
-  {
-    "message": "The Legend of Zelda: Ocarina of Time est initialement sorti en 1998. Je joue à la version 3DS sortie en 2011 pour avoir de meilleurs graphismes. J'utilise l'émulateur Citra. Et oui, je découvre le jeu aifetvLove",
-    "whisper": false,
-    "name": ["oot"],
-    "description": "Informations à propos de Zelda : Ocarina of Time"
   },
   {
     "message": "Le spoil, c'est prévenir de ce qu'il va se passer avant que celà n'arrive. Ne faites pas ça sous peine de bannissement !",
@@ -292,7 +262,7 @@
     "description": "C'est quoi le rando ?"
   },
   {
-    "message": "ID Arène MMR33",
+    "message": "ID Arène DS7LM - https://challonge.com/fr/aifedesfight_ofthelove",
     "whisper": false,
     "name": ["ssbu"],
     "description": "Tournoi SSBU"
