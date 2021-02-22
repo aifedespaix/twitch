@@ -16,4 +16,5 @@ export default {
   oot: "oot",
   ssbu: "ssbu",
   alttp: "alttp",
+  ww: "ww",
 }
