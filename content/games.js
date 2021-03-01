@@ -17,4 +17,5 @@ export default {
   ssbu: "ssbu",
   alttp: "alttp",
   ww: "ww",
+  layton: "layton-1",
 }
