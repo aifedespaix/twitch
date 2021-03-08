@@ -179,7 +179,7 @@
   },
   {
     "name": ["don"],
-    "message": "Vous pouvez faire un don sur https://streamlabs.com/aifedesglitch/tip",
+    "message": "Vous pouvez faire un don sur https://streamlabs.com/aifetv/tip",
     "whisper": false,
     "description": "Obtenir le lien pour faire un don"
   },
@@ -244,27 +244,63 @@
     "description": "C'est quoi le backseat ?"
   },
   {
-    "message": "Je m'entraine à Speedrun Super Mario Odyssey. J'ai apris la route il y a quelques mois, je m'y remet doucement. Étant pas chaud du tout sur le jeu, mon objectif est de sub 1h30.",
+    "message": "Je m'entraîne au Speedrun any% de Super Mario Odyssey. J'ai appris la route il y a quelques mois, je m'y remet doucement. Étant pas chaud du tout sur le jeu, mon objectif est de sub 1h30.",
     "whisper": false,
     "name": ["smo"],
     "description": "C'est quoi SMO ?"
   },
   {
-    "message": "https://kadgar.net/live/aifetv/SuperPlayer02/zarwaldo/Zelkys/Yanis2/therealyuukochan",
+    "message": "https://kadgar.net/live/AifeTV/superplayer02",
     "whisper": false,
     "name": ["multi"],
     "description": "Lien du Multi Twitch"
   },
   {
-    "message": "Le rando de Breath of the Wild a été conçu entièrement par Zarwaldo et SuperPlayer tant dans le code que la création de la logique et des features que comprennent le jeu. C'est une application qui permet \"en autogestion\" de vous forcer à découvrir le jeu d'une nouvelle façon. Désormais, tous les items majeurs sont éparpillés aléatoirement à travers les sanctuaire, les quêtes, les tours, les fontaines de fée ainsi que les souvenirs qui vous permettrons de naviguer sur ce monde d'Hyrule !",
+    "message": "Le Randomizer Breath of the Wild est une application qui permet \"en auto-gestion\" de se forcer à découvrir le jeu d'une nouvelle façon. Tous les items majeurs sont éparpillés aléatoirement à travers les sanctuaire, les quêtes, les tours, les fontaines de fée ainsi que les souvenirs qui permettent de se déplacer autour d'Hyrule ! Pour bien comprendre, rendez-vous sur cette vidéo https://youtu.be/wsMDT3C76Jc",
     "whisper": false,
     "name": ["rando"],
     "description": "C'est quoi le rando ?"
   },
   {
-    "message": "ID Arène DS7LM - https://challonge.com/fr/aifedesfight_ofthelove",
+    "message": "ID Arène 1C5W4 - https://challonge.com/fr/dfcwcc84",
     "whisper": false,
     "name": ["ssbu"],
     "description": "Tournoi SSBU"
+  },
+  {
+    "message": "The Legend of Zelda: A Link to the Past est le troisième opus de la licence Zelda. On incarne Link qui doit trouver trois pendentifs pour récupérer Excalibur et sauvée Zelda des griffes du sorcier Agahnim. Je joue sur émulateur de Game Boy Advance avec un filtre améliorant le visuel du jeu.",
+    "whisper": false,
+    "name": ["alttp"],
+    "description": "C'est quoi The Legend of Zelda : A Link to the Past ?"
+  },
+  {
+    "message": "Un bingo consiste à valider une grille d'objectifs. Le premier de nous deux à cocher au moins la moitié des cases de la grille remporte la victoire. Si l'un d'entre nous en valide une, elle est bloquée pour l'autre. Ça va être la guerre !",
+    "whisper": false,
+    "name": ["bingo"],
+    "description": "C'est quoi un Bingo"
+  },
+  {
+    "message": "Un marathon consiste à terminer le jeu d'une traite, dans le cas présent on doit le terminer à 100% (20 à 30h estimées)",
+    "whisper": false,
+    "name": ["marathon"],
+    "description": ""
+  },
+  {
+    "message": "The Legend of Zelda: The Wind Waker est un Zelda 3D initialement sorti en 2003 en France sur Nintendo GameCube. Je joue à la version remaster HD sortie sur Wii U en 2013. J'utilise l'émulateur CEMU ainsi qu'une manette de Xbox One. J'ai déjà fait le jeu, mais je ne m'en souvient pas. Quoi qu'il en soit, le !backseat et le !spoil est strictement interdit. Have Fun aifetvLove",
+    "whisper": false,
+    "name": ["tww"],
+    "description": ""
+  },
+  {
+    "message": "Professeur Layton et l'Étrange Village est un point and click développé par Level-5 sorti sur Nintendo DS en 2008. Le but du jeu est d'enquêter en résolvant diverses énigmes. Je joue sur émulateur de DS : DeSmuME.",
+    "whisper": false,
+    "name": ["layton"],
+    "description": ""
+  },
+  {
+    "message": "J'en suis là",
+    "whisper": false,
+    "name": ["tenesou"],
+    "description": ""
   }
 ]
