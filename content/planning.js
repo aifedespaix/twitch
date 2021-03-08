@@ -1,6 +1,6 @@
 import G from "~/content/games"
 
-const date_from = new Date("2020-03-01T00:00:00")
+const date_from = new Date("2020-03-08T00:00:00")
 const date_to = new Date(date_from)
 date_to.setDate(date_from.getDate() + 6)
 
@@ -14,11 +14,11 @@ export const Planning = {
         {
           img: G.ww,
           from: 18,
-          to: 21,
+          to: 22,
         },
         {
           img: G.layton,
-          from: 21,
+          from: 22,
           to: 24,
         },
       ],
@@ -29,11 +29,11 @@ export const Planning = {
         {
           img: G.ww,
           from: 18,
-          to: 21,
+          to: 22,
         },
         {
           img: G.layton,
-          from: 21,
+          from: 22,
           to: 24,
         },
       ],
@@ -42,13 +42,8 @@ export const Planning = {
       name: "Mercredi",
       games: [
         {
-          img: G.smo,
-          from: 15,
-          to: 17,
-        },
-        {
           img: G.botw,
-          from: 17,
+          from: 15,
           to: 20,
         },
       ],
@@ -57,13 +52,13 @@ export const Planning = {
       name: "Jeudi",
       games: [
         {
-          img: G.smo,
+          img: G.ww,
           from: 18,
-          to: 20,
+          to: 21,
         },
         {
-          img: G.ww,
-          from: 20,
+          img: G.botw,
+          from: 21,
           to: 24,
         },
       ],
@@ -72,13 +67,8 @@ export const Planning = {
       name: "Vendredi",
       games: [
         {
-          img: G.smo,
+          img: G.botw,
           from: 18,
-          to: 21,
-        },
-        {
-          img: G.layton,
-          from: 21,
           to: 24,
         },
       ],
